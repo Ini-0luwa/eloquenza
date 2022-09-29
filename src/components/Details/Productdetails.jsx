@@ -1,5 +1,6 @@
 import React from 'react';
 import { bigproduct1, bigproduct2, bigproduct3, bigproduct4, bigproduct5, bigproduct6, checkout, product1, product2, product3, product4, smallproduct10, smallproduct11, smallproduct12, smallproduct7, smallproduct8, smallproduct9 } from '../../assets/img';
+import {Link} from 'react-router-dom';
 
 function Productdetails(props) {
   return (
