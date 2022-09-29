@@ -1,5 +1,5 @@
 import React from 'react';
-import { product1, product2, product3, product4, product7, product9 } from '../../assets/img';
+import { product1, product3, product7, product9 } from '../../assets/img';
 
 function Wishlist(props) {
   return (

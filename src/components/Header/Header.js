@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
-import {bus_icon, logo, email_icon, usd_icon, lang_icon, lamp_icon} from '../../assets/img'
+import {bus_icon, logo, email_icon, usd_icon, lamp_icon} from '../../assets/img'
 
 function Header(props) {
   return (
@@ -34,7 +34,7 @@ function Header(props) {
         <div class="container-fluid">
           <div class="main__header--inner position__relative d-flex justify-content-between align-items-center">
             <div class="offcanvas__header--menu__open ">
-              <Link class="offcanvas__header--menu__open--btn" to="javascript:void(0)" data-offcanvas>
+              <Link class="offcanvas__header--menu__open--btn" data-offcanvas>
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512">
                   <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/>
                 </svg>
@@ -130,7 +130,7 @@ function Header(props) {
             <div class="header__account header__account2 header__sticky--block">
               <ul class="d-flex">
                 <li class="header__account--items header__account2--items  header__account--search__items d-none d-lg-block">
-                  <Link class="header__account--btn search__open--btn" to="javascript:void(0)" data-offcanvas>
+                  <Link class="header__account--btn search__open--btn" data-offcanvas>
                     <svg class="header__search--button__svg" xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443" viewBox="0 0 512 512">
                       <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
                       <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/>
@@ -156,7 +156,7 @@ function Header(props) {
                   </Link>
                 </li>
                 <li class="header__account--items header__account2--items">
-                  <Link class="header__account--btn minicart__open--btn" to="javascript:void(0)" data-offcanvas>
+                  <Link class="header__account--btn minicart__open--btn" data-offcanvas>
                     <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443" viewBox="0 0 14.706 13.534">
                       <g  transform="translate(0 0)">
                         <g >
@@ -294,7 +294,7 @@ function Header(props) {
             </Link>
           </li>
           <li class="offcanvas__stikcy--toolbar__list ">
-            <Link class="offcanvas__stikcy--toolbar__btn search__open--btn" to="javascript:void(0)" data-offcanvas>
+            <Link class="offcanvas__stikcy--toolbar__btn search__open--btn" data-offcanvas>
               <span class="offcanvas__stikcy--toolbar__icon">
                 <svg xmlns="http://www.w3.org/2000/svg"  width="22.51" height="20.443" viewBox="0 0 512 512">
                   <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
@@ -305,7 +305,7 @@ function Header(props) {
             </Link>
           </li>
           <li class="offcanvas__stikcy--toolbar__list">
-            <Link class="offcanvas__stikcy--toolbar__btn minicart__open--btn" to="javascript:void(0)" data-offcanvas>
+            <Link class="offcanvas__stikcy--toolbar__btn minicart__open--btn" data-offcanvas>
               <span class="offcanvas__stikcy--toolbar__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18.51" height="15.443" viewBox="0 0 18.51 15.443">
                   <path  d="M79.963,138.379l-13.358,0-.56-1.927a.871.871,0,0,0-.6-.592l-1.961-.529a.91.91,0,0,0-.226-.03.864.864,0,0,0-.226,1.7l1.491.4,3.026,10.919a1.277,1.277,0,1,0,1.844,1.144.358.358,0,0,0,0-.049h6.163c0,.017,0,.034,0,.049a1.277,1.277,0,1,0,1.434-1.267c-1.531-.247-7.783-.55-7.783-.55l-.205-.8h7.8a.9.9,0,0,0,.863-.651l1.688-5.943h.62a.936.936,0,1,0,0-1.872Zm-9.934,6.474H68.568c-.04,0-.1.008-.125-.085-.034-.118-.082-.283-.082-.283l-1.146-4.037a.061.061,0,0,1,.011-.057.064.064,0,0,1,.053-.025h1.777a.064.064,0,0,1,.063.051l.969,4.34,0,.013a.058.058,0,0,1,0,.019A.063.063,0,0,1,70.03,144.853Zm3.731-4.41-.789,4.359a.066.066,0,0,1-.063.051h-1.1a.064.064,0,0,1-.063-.051l-.789-4.357a.064.064,0,0,1,.013-.055.07.07,0,0,1,.051-.025H73.7a.06.06,0,0,1,.051.025A.064.064,0,0,1,73.76,140.443Zm3.737,0L76.26,144.8a.068.068,0,0,1-.063.049H74.684a.063.063,0,0,1-.051-.025.064.064,0,0,1-.013-.055l.973-4.357a.066.066,0,0,1,.063-.051h1.777a.071.071,0,0,1,.053.025A.076.076,0,0,1,77.5,140.448Z" transform="translate(-62.393 -135.3)" fill="currentColor"/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { instagram1, instagram2, instagram3, instagram4, instagram5, instagram6, visa_card } from '../../assets/img';
+import { visa_card } from '../../assets/img';
 import {Link} from 'react-router-dom';
 
 function Footer(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Slider.css';
-import { slider1, slider2, slider3, slider4, slider5, text_shape } from '../../assets/img';
+import { slider1, slider2, slider3, slider4, slider5 } from '../../assets/img';
 
 function Slider(props) {
   return (
