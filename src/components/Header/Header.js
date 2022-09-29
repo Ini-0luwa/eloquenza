@@ -42,7 +42,7 @@ function Header(props) {
               </Link>
             </div>
             <div class="main__logo">
-              <h1 class="main__logo--title"><Link class="main__logo--link" to="/"><img class="main__logo--img" src={logo} alt="logo-img" /></Link></h1>
+              <h1 class="main__logo--title"><Link class="main__logo--link" to="/"><img class=".main__logo--img" src={logo} alt="logo-img" /></Link></h1>
             </div>
             <div class="header__search--widget header__sticky--none d-none d-lg-block">
               <form class="d-flex header__search--form" action="#">

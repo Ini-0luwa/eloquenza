@@ -1,4 +1,4 @@
-export const logo = require('./logo/nav-log.png');
+export const logo = require('./logo/logo.png');
 export const bus_icon = require('./icon/bus.png');
 export const text_shape = require('./icon/text-shape-icon.png');
 export const lamp_icon = require('./icon/lamp.png');

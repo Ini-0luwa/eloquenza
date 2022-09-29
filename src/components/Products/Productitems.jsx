@@ -1,8 +1,9 @@
 import React from 'react';
-// import { product1, product10, product11, product12, product13, product14, product15, product2, product3, product4, product5, product6, product7, product8, product9 } from '../../assets/img';
+import { product1, product10, product11, product12, product13, product14, product15, product2, product3, product4, product5, product6, product7, product8, product9 } from '../../assets/img';
+import { productData } from './data';
 // import { productData } from '../../data';
 
-function Productitems({item}){
+function Productitems(){
   return (
     
     // <div>
@@ -13,10 +14,10 @@ function Productitems({item}){
     //   })}</h1>
     // </div>
 
-    <section class="product__section section--padding pt-5 mt-5" hidden>
+    <section class="product__section section--padding pt-5 mt-5">
     <div class="container-fluid">
       <div class="section__heading text-center mb-35">
-        <h2 class="section__heading--maintitle">Dynamic Sales</h2>
+        <h2 class="section__heading--maintitle">New Products</h2>
       </div>
       <ul class="product__tab--one product__tab--primary__btn d-flex justify-content-center mb-50">
         <li class="product__tab--primary__btn__list active" data-toggle="tab" data-target="#featured">Featured </li>
@@ -27,24 +28,26 @@ function Productitems({item}){
         <div id="featured" class="tab_pane active show">
           <div class="product__section--inner">
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
+              {productData.map((product) =>{
+                return (
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
                     <a class="product__items--link" href="product-details.html">
-                    <img class="product__items--img product__primary--img" src={item.img} alt="product-img" />
-                    <img class="product__items--img product__secondary--img" src={item.img} alt="product-img" />
+                    <img class="product__items--img product__primary--img" src={product.img} alt="product-img" />
+                    <img class="product__items--img product__secondary--img" src={product.img} alt="product-img" />
                     </a>
                     <div class="product__badge">
-                      <span class="product__badge--items sale">{item.badge}</span>
+                      <span class="product__badge--items sale">{product.badge}</span>
                     </div>
                   </div>
                   <div class="product__items--content">
-                    <span class="product__items--content__subtitle">{item.title}</span>
-                    <h3 class="product__items--content__title h4"><a href="product-details.html">{item.desc}</a></h3>
+                    <span class="product__items--content__subtitle">{product.title}</span>
+                    <h3 class="product__items--content__title h4"><a href="product-details.html">{product.desc}</a></h3>
                     <div class="product__items--price">
-                      <span class="current__price">{item.newPrice}</span>
+                      <span class="current__price">{product.newPrice}</span>
                       <span class="price__divided"></span>
-                      <span class="old__price">{item.oldPrice}</span>
+                      <span class="old__price">{product.oldPrice}</span>
                     </div>
                     <ul class="rating product__rating d-flex">
                       <li class="rating__list">
@@ -118,9 +121,13 @@ function Productitems({item}){
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div>                  
+                )
+              })}
+
             </div>
           </div>
+
         </div>
       </div>
     </div>

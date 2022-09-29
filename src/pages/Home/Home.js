@@ -11,6 +11,7 @@ function Home(props) {
       <Slider />
       <Banner1 />
       <Banner4 />
+      {/* <Productitems /> */}
       <Product />
       {/* <Productitems /> */}
     </div>
