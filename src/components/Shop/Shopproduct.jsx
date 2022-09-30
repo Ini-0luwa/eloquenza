@@ -68,7 +68,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -160,7 +160,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -252,7 +252,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -344,7 +344,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -436,7 +436,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -528,7 +528,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -620,7 +620,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -712,7 +712,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -804,7 +804,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -896,7 +896,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -988,7 +988,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -1080,7 +1080,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -1172,7 +1172,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -1264,7 +1264,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -1356,7 +1356,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -1448,7 +1448,7 @@ function Shopproduct(props) {
                   </ul>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -1547,7 +1547,7 @@ function Shopproduct(props) {
                   <p class="product__list--items__content--desc d-none d-xl-block mb-15">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptas dolore doloribus architecto sequi corporis deleniti officia culpa dolor esse consectetur eligendi, natus at rem ab quae amet molestiae quod voluptates, illo exercitationem numquam ipsa. Est fuga ex ipsum alias ipsa quibusdam magni harum labore voluptate, esse deserunt saepe eveniet.</p>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -1640,7 +1640,7 @@ function Shopproduct(props) {
                   <p class="product__list--items__content--desc d-none d-xl-block mb-15">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptas dolore doloribus architecto sequi corporis deleniti officia culpa dolor esse consectetur eligendi, natus at rem ab quae amet molestiae quod voluptates, illo exercitationem numquam ipsa. Est fuga ex ipsum alias ipsa quibusdam magni harum labore voluptate, esse deserunt saepe eveniet.</p>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -1733,7 +1733,7 @@ function Shopproduct(props) {
                   <p class="product__list--items__content--desc d-none d-xl-block mb-15">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptas dolore doloribus architecto sequi corporis deleniti officia culpa dolor esse consectetur eligendi, natus at rem ab quae amet molestiae quod voluptates, illo exercitationem numquam ipsa. Est fuga ex ipsum alias ipsa quibusdam magni harum labore voluptate, esse deserunt saepe eveniet.</p>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -1826,7 +1826,7 @@ function Shopproduct(props) {
                   <p class="product__list--items__content--desc d-none d-xl-block mb-15">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptas dolore doloribus architecto sequi corporis deleniti officia culpa dolor esse consectetur eligendi, natus at rem ab quae amet molestiae quod voluptates, illo exercitationem numquam ipsa. Est fuga ex ipsum alias ipsa quibusdam magni harum labore voluptate, esse deserunt saepe eveniet.</p>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -1919,7 +1919,7 @@ function Shopproduct(props) {
                   <p class="product__list--items__content--desc d-none d-xl-block mb-15">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptas dolore doloribus architecto sequi corporis deleniti officia culpa dolor esse consectetur eligendi, natus at rem ab quae amet molestiae quod voluptates, illo exercitationem numquam ipsa. Est fuga ex ipsum alias ipsa quibusdam magni harum labore voluptate, esse deserunt saepe eveniet.</p>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
@@ -2012,7 +2012,7 @@ function Shopproduct(props) {
                   <p class="product__list--items__content--desc d-none d-xl-block mb-15">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptas dolore doloribus architecto sequi corporis deleniti officia culpa dolor esse consectetur eligendi, natus at rem ab quae amet molestiae quod voluptates, illo exercitationem numquam ipsa. Est fuga ex ipsum alias ipsa quibusdam magni harum labore voluptate, esse deserunt saepe eveniet.</p>
                   <ul class="product__items--action d-flex">
                     <li class="product__items--action__list">
-                      <Link class="product__items--action__btn add__to--cart" to="cart.html">
+                      <Link class="product__items--action__btn add__to--cart" to="/checkout">
                         <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 14.706 13.534">
                           <g transform="translate(0 0)">
                             <g>
