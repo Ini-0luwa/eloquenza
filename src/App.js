@@ -1,35 +1,44 @@
 import React from 'react';
 import './App.css';
 import Home from './pages/Home/Home';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Layout from './Layout/Layout';
 import AboutUs from './pages/About-us/AboutUs';
 import WishListpage from './pages/Wishlistsection/WishListpage';
-import Cartsection from './pages/Cart/Cartsection';
 import Productdetailpage from './pages/Productdetailpage/Productdetailpage';
 import Contact from './components/Contact/Contact';
 import LoginRegister from './components/Contact/LoginRegister';
 import Shoppage from './pages/Shoppage/Shoppage';
+import Layout2 from './Layout/Layout2';
+import Checkout1 from './components/Checkout/Checkout1';
+import Checkout2 from './components/Checkout/Checkout2';
+import Checkout3 from './components/Checkout/Checkout3';
+import Checkout4 from './components/Checkout/Checkout4';
 
 function App() {
   return (
     <div className="">
-      <BrowserRouter>
 
         <Routes>
           <Route element={<Layout />}>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<AboutUs />}/>
             <Route path='/wishlist' element={<WishListpage />}/>
-            <Route path='/cart' element={<Cartsection />}/>
             <Route path='/product-detail' element={<Productdetailpage />}/>
             <Route path='/contact' element={<Contact />}/>
             <Route path='/login' element={<LoginRegister />}/>
             <Route path='/shop' element={<Shoppage />}/>
+            <Route path='/checkout4' element={<Checkout4 />}/>
           </Route>
+
+          <Route element={<Layout2 />}>
+            <Route path='/checkout' element={<Checkout1 />}/>
+            <Route path='/checkout2' element={<Checkout2 />}/>
+            <Route path='/checkout3' element={<Checkout3 />}/>
+          </Route>
+
         </Routes>
 
-      </BrowserRouter>
     </div>
   );
 }

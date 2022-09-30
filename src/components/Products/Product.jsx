@@ -41,9 +41,9 @@ function Product(){
         <h2 class="section__heading--maintitle">New Products</h2>
       </div>
       <ul class="product__tab--one product__tab--primary__btn d-flex justify-content-center mb-50">
-        <li class="product__tab--primary__btn__list active" data-toggle="tab" data-target="#featured">Featured </li>
-        <li class="product__tab--primary__btn__list" data-toggle="tab" data-target="#trending">Trending </li>
-        <li class="product__tab--primary__btn__list" data-toggle="tab" data-target="#newarrival">New Arrival  </li>
+        <li class="product__tab--primary__btn__list active" data-toggle="tab" data-target="#featured">Skincare </li>
+        <li class="product__tab--primary__btn__list" data-toggle="tab" data-target="#trending">Clothing </li>
+        <li class="product__tab--primary__btn__list" data-toggle="tab" data-target="#newarrival">Hairs </li>
       </ul>
       <div class="tab_content">
         <div id="featured" class="tab_pane active show">

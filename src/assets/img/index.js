@@ -5,6 +5,8 @@ export const lamp_icon = require('./icon/lamp.png');
 export const email_icon = require('./icon/email.png');
 export const lang_icon = require('./icon/language-icon.png');
 export const usd_icon = require('./icon/usd-icon.png');
+export const credit_card = require('./icon/credit-card.svg');
+
 
 
 // banner images

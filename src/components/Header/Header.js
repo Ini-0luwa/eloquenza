@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
-import {bus_icon, logo, email_icon, usd_icon, lamp_icon} from '../../assets/img'
+import { logo, usd_icon, lamp_icon} from '../../assets/img'
 
 function Header(props) {
   return (
@@ -12,8 +12,7 @@ function Header(props) {
             <div class="header__shipping">
               <ul class="header__shipping--wrapper d-flex">
                 <li class="header__shipping--text text-white">Welcome to Eloquenza Store</li>
-                <li class="header__shipping--text text-white d-sm-2-none"><img class="header__shipping--text__icon" src={bus_icon} alt="bus-icon" /> Track Your Order</li>
-                <li class="header__shipping--text text-white d-sm-2-none"><img class="header__shipping--text__icon" src={email_icon} alt="email-icon" /> <Link class="header__shipping--text__link" to="mailto:demo@gmail.com">demo@gmail.com</Link></li>
+                <li class="header__shipping--text text-white d-sm-2-none"><i class="fa-regular fa-paper-plane"></i> <Link class="header__shipping--text__link" to="mailto:demo@gmail.com">contact.elonquenza@gmail.com</Link></li>
               </ul>
             </div>
             <div class="language__currency d-none d-lg-block">
@@ -71,21 +70,12 @@ function Header(props) {
             <div class="header__account header__sticky--none">
               <ul class="d-flex">
                 <li class="header__account--items">
-                  <Link class="header__account--btn" to="my-account.html">
+                  <Link class="header__account--btn" to="checkout4">
                     <svg xmlns="http://www.w3.org/2000/svg"  width="26.51" height="23.443" viewBox="0 0 512 512">
                       <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
                       <path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
                     </svg>
                     <span class="header__account--btn__text">My Account</span>
-                  </Link>
-                </li>
-                <li class="header__account--items d-none d-lg-block">
-                  <Link to='/wishlist' class="header__account--btn">
-                    <svg  xmlns="http://www.w3.org/2000/svg" width="28.51" height="23.443" viewBox="0 0 512 512">
-                      <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
-                    </svg>
-                    <span class="header__account--btn__text"> Wish List</span>
-                    <span class="items__count wishlist">02</span> 
                   </Link>
                 </li>
                 <li class="header__account--items">
