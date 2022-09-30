@@ -1,6 +1,8 @@
 import React from 'react';
 import { bigproduct1, bigproduct2, bigproduct3, bigproduct4, bigproduct5, bigproduct6, checkout, product1, product2, product3, product4, smallproduct10, smallproduct11, smallproduct12, smallproduct7, smallproduct8, smallproduct9 } from '../../assets/img';
 import {Link} from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 function Productdetails(props) {
   return (
@@ -10,12 +12,12 @@ function Productdetails(props) {
       <div class="col">
         <div class="product__details--media">
           <div class="product__media--preview  swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+            <Swiper class=".swiper-wrapper">
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--preview__items">
-                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to="assets/img/product/big-product2.jpg"><img class="product__media--preview__items--img" src={bigproduct2} alt="product-media-img" /></Link>
+                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to=""><img class="product__media--preview__items--img" src={bigproduct2} alt="product-media-img" /></Link>
                   <div class="product__media--view__icon">
-                    <Link class="product__media--view__icon--link glightbox" to="assets/img/product/big-product2.jpg" data-gallery="product-media-preview">
+                    <Link class="product__media--view__icon--link glightbox" to="" data-gallery="product-media-preview">
                       <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                         <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -23,12 +25,12 @@ function Productdetails(props) {
                     </Link>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </SwiperSlide>
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--preview__items">
-                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to="assets/img/product/big-product1.jpg"><img class="product__media--preview__items--img" src={bigproduct1} alt="product-media-img" /></Link>
+                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to=""><img class="product__media--preview__items--img" src={bigproduct1} alt="product-media-img" /></Link>
                   <div class="product__media--view__icon">
-                    <Link class="product__media--view__icon--link glightbox" to="assets/img/product/big-product1.jpg" data-gallery="product-media-preview">
+                    <Link class="product__media--view__icon--link glightbox" to="" data-gallery="product-media-preview">
                       <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                         <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -36,12 +38,12 @@ function Productdetails(props) {
                     </Link>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </SwiperSlide>
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--preview__items">
-                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to="assets/img/product/big-product3.jpg"><img class="product__media--preview__items--img" src={bigproduct3} alt="product-media-img" /></Link>
+                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to=""><img class="product__media--preview__items--img" src={bigproduct3} alt="product-media-img" /></Link>
                   <div class="product__media--view__icon">
-                    <Link class="product__media--view__icon--link glightbox" to="assets/img/product/big-product3.jpg" data-gallery="product-media-preview">
+                    <Link class="product__media--view__icon--link glightbox" to="" data-gallery="product-media-preview">
                       <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                         <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -49,12 +51,12 @@ function Productdetails(props) {
                     </Link>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </SwiperSlide>
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--preview__items">
-                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to="assets/img/product/big-product4.jpg"><img class="product__media--preview__items--img" src={bigproduct4} alt="product-media-img" /></Link>
+                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to=""><img class="product__media--preview__items--img" src={bigproduct4} alt="product-media-img" /></Link>
                   <div class="product__media--view__icon">
-                    <Link class="product__media--view__icon--link glightbox" to="assets/img/product/big-product4.jpg" data-gallery="product-media-preview">
+                    <Link class="product__media--view__icon--link glightbox" to="" data-gallery="product-media-preview">
                       <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                         <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -62,12 +64,12 @@ function Productdetails(props) {
                     </Link>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </SwiperSlide>
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--preview__items">
-                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to="assets/img/product/big-product5.jpg"><img class="product__media--preview__items--img" src={bigproduct5} alt="product-media-img" /></Link>
+                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to=""><img class="product__media--preview__items--img" src={bigproduct5} alt="product-media-img" /></Link>
                   <div class="product__media--view__icon">
-                    <Link class="product__media--view__icon--link glightbox" to="assets/img/product/big-product5.jpg" data-gallery="product-media-preview">
+                    <Link class="product__media--view__icon--link glightbox" to="" data-gallery="product-media-preview">
                       <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                         <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -75,12 +77,12 @@ function Productdetails(props) {
                     </Link>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </SwiperSlide>
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--preview__items">
-                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to="assets/img/product/big-product6.jpg"><img class="product__media--preview__items--img" src={bigproduct6} alt="product-media-img" /></Link>
+                  <Link class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" to=""><img class="product__media--preview__items--img" src={bigproduct6} alt="product-media-img" /></Link>
                   <div class="product__media--view__icon">
-                    <Link class="product__media--view__icon--link glightbox" to="assets/img/product/big-product6.jpg" data-gallery="product-media-preview">
+                    <Link class="product__media--view__icon--link glightbox" to="" data-gallery="product-media-preview">
                       <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                         <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -88,42 +90,42 @@ function Productdetails(props) {
                     </Link>
                   </div>
                 </div>
-              </div>
-            </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
           <div class="product__media--nav swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+            <Swiper class="swiper-wrapper" slidesPerView={6}>
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--nav__items">
                   <img class="product__media--nav__items--img" src={smallproduct7} alt="product-nav-img" />
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </SwiperSlide>
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--nav__items">
                   <img class="product__media--nav__items--img" src={smallproduct8} alt="product-nav-img" />
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </SwiperSlide>
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--nav__items">
                   <img class="product__media--nav__items--img" src={smallproduct9} alt="product-nav-img" />
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </SwiperSlide>
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--nav__items">
                   <img class="product__media--nav__items--img" src={smallproduct10} alt="product-nav-img" />
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </SwiperSlide>
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--nav__items">
                   <img class="product__media--nav__items--img" src={smallproduct11} alt="product-nav-img" />
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </SwiperSlide>
+              <SwiperSlide class="swiper-slide">
                 <div class="product__media--nav__items">
                   <img class="product__media--nav__items--img" src={smallproduct12} alt="product-nav-img" />
                 </div>
-              </div>
-            </div>
+              </SwiperSlide>
+            </Swiper>
             <div class="swiper__nav--btn swiper-button-next"></div>
             <div class="swiper__nav--btn swiper-button-prev"></div>
           </div>
@@ -212,7 +214,7 @@ function Productdetails(props) {
                   </label>
                   <button type="button" class="quantity__value quickview__value--quantity increase" aria-label="quantity value" value="Increase Value">+</button>
                 </div>
-                <button class="quickview__cart--btn primary__btn" type="submit">Add To Cart</button>  
+                <button class="quickview__cart--btn primary__btn" type="submit"><Link to='/checkout'>Add To Cart</Link></button>  
               </div>
               <div class="product__variant--list mb-15">
                 <Link class="variant__wishlist--icon mb-15" to="wishlist.html" title="Add to wishlist">
@@ -221,7 +223,7 @@ function Productdetails(props) {
                   </svg>
                   Add to Wishlist
                 </Link>
-                <button class="variant__buy--now__btn primary__btn" type="submit">Buy it now</button>
+                <button class="variant__buy--now__btn primary__btn" type="submit"><Link to='/checkout'>Buy it now</Link></button>
               </div>
               <div class="product__details--info__meta">
                 <p class="product__details--info__meta--list"><strong>Barcode:</strong>  <span>565461</span> </p>

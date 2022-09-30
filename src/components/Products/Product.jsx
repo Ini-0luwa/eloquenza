@@ -52,7 +52,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product1} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product2} alt="product-img" />
                     </Link>
@@ -62,7 +62,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h3 class="product__items--content__title h4"><Link to="/prodcutdetails">Oversize Cotton Dress</Link></h3>
+                    <h3 class="product__items--content__title h4"><Link to="/productdetail">Oversize Cotton Dress</Link></h3>
                     <div class="product__items--price">
                       <span class="current__price">$110</span>
                       <span class="price__divided"></span>
@@ -144,7 +144,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product3} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product4} alt="product-img" />
                     </Link>
@@ -154,7 +154,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h3 class="product__items--content__title h4"><Link to="/prodcutdetails">Boxy Denim Jacket</Link></h3>
+                    <h3 class="product__items--content__title h4"><Link to="/productdetail">Boxy Denim Jacket</Link></h3>
                     <div class="product__items--price">
                       <span class="current__price">$120</span>
                       <span class="price__divided"></span>
@@ -236,7 +236,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product5} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product11} alt="product-img" />
                     </Link>
@@ -246,7 +246,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Quilted Shoulder Bag</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Quilted Shoulder Bag</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$115</span>
                       <span class="price__divided"></span>
@@ -328,7 +328,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product6} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product7} alt="product-img" />
                     </Link>
@@ -338,7 +338,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">High Ankle Jeans</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">High Ankle Jeans</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$125</span>
                       <span class="price__divided"></span>
@@ -420,7 +420,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product8} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product15} alt="product-img" />
                     </Link>
@@ -430,7 +430,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Square Shoulder Bag</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Square Shoulder Bag</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$117</span>
                       <span class="price__divided"></span>
@@ -512,7 +512,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product9} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product10} alt="product-img" />
                     </Link>
@@ -522,7 +522,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Light Denim Jacket</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Light Denim Jacket</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$130</span>
                       <span class="price__divided"></span>
@@ -604,7 +604,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product12} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product13} alt="product-img" />
                     </Link>
@@ -614,7 +614,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Wool-blend Jacket</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Wool-blend Jacket</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$144</span>
                       <span class="price__divided"></span>
@@ -696,7 +696,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product11} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product8} alt="product-img" />
                     </Link>
@@ -706,7 +706,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Aware organic cotton</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Aware organic cotton</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$135</span>
                       <span class="price__divided"></span>
@@ -788,7 +788,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product14} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product15} alt="product-img" />
                     </Link>
@@ -798,7 +798,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Western denim shirt</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Western denim shirt</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$128</span>
                       <span class="price__divided"></span>
@@ -880,7 +880,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product2} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product1} alt="product-img" />
                     </Link>
@@ -890,7 +890,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">OSmock Mini Dresss</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">OSmock Mini Dresss</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$142</span>
                       <span class="price__divided"></span>
@@ -978,7 +978,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product8} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product15} alt="product-img" />
                     </Link>
@@ -988,7 +988,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Square Shoulder Bag</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Square Shoulder Bag</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$117</span>
                       <span class="price__divided"></span>
@@ -1070,7 +1070,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product9} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product10} alt="product-img" />
                     </Link>
@@ -1080,7 +1080,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Light Denim Jacket</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Light Denim Jacket</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$130</span>
                       <span class="price__divided"></span>
@@ -1162,7 +1162,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product12} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product13} alt="product-img" />
                     </Link>
@@ -1172,7 +1172,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Wool-blend Jacket</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Wool-blend Jacket</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$144</span>
                       <span class="price__divided"></span>
@@ -1254,7 +1254,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product11} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product8} alt="product-img" />
                     </Link>
@@ -1264,7 +1264,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Aware organic cotton</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Aware organic cotton</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$135</span>
                       <span class="price__divided"></span>
@@ -1346,7 +1346,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product14} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product15} alt="product-img" />
                     </Link>
@@ -1356,7 +1356,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Western denim shirt</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Western denim shirt</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$128</span>
                       <span class="price__divided"></span>
@@ -1438,7 +1438,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product2} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product1} alt="product-img" />
                     </Link>
@@ -1448,7 +1448,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">OSmock Mini Dresss</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">OSmock Mini Dresss</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$142</span>
                       <span class="price__divided"></span>
@@ -1530,7 +1530,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product1} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product2} alt="product-img" />
                     </Link>
@@ -1540,7 +1540,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h3 class="product__items--content__title h4"><Link to="/prodcutdetails">Oversize Cotton Dress</Link></h3>
+                    <h3 class="product__items--content__title h4"><Link to="/productdetail">Oversize Cotton Dress</Link></h3>
                     <div class="product__items--price">
                       <span class="current__price">$110</span>
                       <span class="price__divided"></span>
@@ -1622,7 +1622,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product3} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product4} alt="product-img" />
                     </Link>
@@ -1632,7 +1632,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h3 class="product__items--content__title h4"><Link to="/prodcutdetails">Boxy Denim Jacket</Link></h3>
+                    <h3 class="product__items--content__title h4"><Link to="/productdetail">Boxy Denim Jacket</Link></h3>
                     <div class="product__items--price">
                       <span class="current__price">$120</span>
                       <span class="price__divided"></span>
@@ -1714,7 +1714,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product5} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product11} alt="product-img" />
                     </Link>
@@ -1724,7 +1724,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Quilted Shoulder Bag</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Quilted Shoulder Bag</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$115</span>
                       <span class="price__divided"></span>
@@ -1806,7 +1806,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product6} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product7} alt="product-img" />
                     </Link>
@@ -1816,7 +1816,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">High Ankle Jeans</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">High Ankle Jeans</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$125</span>
                       <span class="price__divided"></span>
@@ -1904,7 +1904,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product6} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product7} alt="product-img" />
                     </Link>
@@ -1914,7 +1914,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">High Ankle Jeans</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">High Ankle Jeans</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$125</span>
                       <span class="price__divided"></span>
@@ -1996,7 +1996,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product8} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product15} alt="product-img" />
                     </Link>
@@ -2006,7 +2006,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Square Shoulder Bag</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Square Shoulder Bag</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$117</span>
                       <span class="price__divided"></span>
@@ -2088,7 +2088,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src={product9} alt="product-img" />
                     <img class="product__items--img product__secondary--img" src={product10} alt="product-img" />
                     </Link>
@@ -2098,7 +2098,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Light Denim Jacket</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Light Denim Jacket</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$130</span>
                       <span class="price__divided"></span>
@@ -2180,7 +2180,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src="assets/img/product/product12.png" alt="product-img" />
                     <img class="product__items--img product__secondary--img" src="assets/img/product/product13.png" alt="product-img" />
                     </Link>
@@ -2190,7 +2190,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Wool-blend Jacket</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Wool-blend Jacket</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$144</span>
                       <span class="price__divided"></span>
@@ -2272,7 +2272,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src="assets/img/product/product1.png" alt="product-img" />
                     <img class="product__items--img product__secondary--img" src="assets/img/product/product2.png" alt="product-img" />
                     </Link>
@@ -2282,7 +2282,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h3 class="product__items--content__title h4"><Link to="/prodcutdetails">Oversize Cotton Dress</Link></h3>
+                    <h3 class="product__items--content__title h4"><Link to="/productdetail">Oversize Cotton Dress</Link></h3>
                     <div class="product__items--price">
                       <span class="current__price">$110</span>
                       <span class="price__divided"></span>
@@ -2364,7 +2364,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src="assets/img/product/product3.png" alt="product-img" />
                     <img class="product__items--img product__secondary--img" src="assets/img/product/product4.png" alt="product-img" />
                     </Link>
@@ -2374,7 +2374,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h3 class="product__items--content__title h4"><Link to="/prodcutdetails">Boxy Denim Jacket</Link></h3>
+                    <h3 class="product__items--content__title h4"><Link to="/productdetail">Boxy Denim Jacket</Link></h3>
                     <div class="product__items--price">
                       <span class="current__price">$120</span>
                       <span class="price__divided"></span>
@@ -2456,7 +2456,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src="assets/img/product/product5.png" alt="product-img" />
                     <img class="product__items--img product__secondary--img" src="assets/img/product/product11.png" alt="product-img" />
                     </Link>
@@ -2466,7 +2466,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Quilted Shoulder Bag</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Quilted Shoulder Bag</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$115</span>
                       <span class="price__divided"></span>
@@ -2548,7 +2548,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src="assets/img/product/product11.png" alt="product-img" />
                     <img class="product__items--img product__secondary--img" src="assets/img/product/product8.png" alt="product-img" />
                     </Link>
@@ -2558,7 +2558,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Aware organic cotton</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Aware organic cotton</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$135</span>
                       <span class="price__divided"></span>
@@ -2640,7 +2640,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src="assets/img/product/product14.png" alt="product-img" />
                     <img class="product__items--img product__secondary--img" src="assets/img/product/product15.png" alt="product-img" />
                     </Link>
@@ -2650,7 +2650,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">Western denim shirt</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">Western denim shirt</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$128</span>
                       <span class="price__divided"></span>
@@ -2732,7 +2732,7 @@ function Product(){
               <div class="col mb-30">
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
-                    <Link class="product__items--link" to="/prodcutdetails">
+                    <Link class="product__items--link" to="/productdetail">
                     <img class="product__items--img product__primary--img" src="assets/img/product/product2.png" alt="product-img" />
                     <img class="product__items--img product__secondary--img" src="assets/img/product/product1.png" alt="product-img" />
                     </Link>
@@ -2742,7 +2742,7 @@ function Product(){
                   </div>
                   <div class="product__items--content">
                     <span class="product__items--content__subtitle">Jacket, Women</span>
-                    <h4 class="product__items--content__title"><Link to="/prodcutdetails">OSmock Mini Dresss</Link></h4>
+                    <h4 class="product__items--content__title"><Link to="/productdetail">OSmock Mini Dresss</Link></h4>
                     <div class="product__items--price">
                       <span class="current__price">$142</span>
                       <span class="price__divided"></span>
