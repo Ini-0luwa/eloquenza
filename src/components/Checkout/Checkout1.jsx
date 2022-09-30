@@ -1,7 +1,10 @@
 import React from 'react';
 import { logo, smallproduct2, smallproduct4, smallproduct7 } from '../../assets/img';
+import {Link, useNavigate} from 'react-router-dom';
 
 function Checkout1(props) {
+  const navigate = useNavigate
+
   return (
 
   <div class="main checkout__mian">
@@ -145,7 +148,7 @@ function Checkout1(props) {
             <h2 class="section__header--title h3">Contact information</h2>
             <p class="layout__flex--item">
               Already have an account?
-              <a class="layout__flex--item__link" href="login.html">Log in</a>  
+              <Link class="layout__flex--item__link" to="/login">Log in</Link>  
             </p>
           </div>
           <div class="customer__information">
@@ -241,8 +244,8 @@ function Checkout1(props) {
           </div>
         </div>
         <div class="checkout__content--step__footer d-flex align-items-center">
-          <a class="continue__shipping--btn primary__btn border-radius-5" href="checkout-2.html">Continue To Shipping</a>
-          <a class="previous__link--content" href="cart.html">Return to cart</a>
+          <Link class="continue__shipping--btn primary__btn border-radius-5" to="/checkout2">Continue To Shipping</Link>
+          <Link class="previous__link--content" onClick={()=>navigate(-1)}>Return to cart</Link>
         </div>
       </form>
     </main>

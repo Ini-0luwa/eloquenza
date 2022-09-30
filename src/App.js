@@ -14,6 +14,7 @@ import Checkout1 from './components/Checkout/Checkout1';
 import Checkout2 from './components/Checkout/Checkout2';
 import Checkout3 from './components/Checkout/Checkout3';
 import Checkout4 from './components/Checkout/Checkout4';
+import Productdetails from './components/Details/Productdetails';
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
             <Route path='/login' element={<LoginRegister />}/>
             <Route path='/shop' element={<Shoppage />}/>
             <Route path='/checkout4' element={<Checkout4 />}/>
+            <Route path='/prodcutdetails' element={<Productdetails />}/>
+            
           </Route>
 
           <Route element={<Layout2 />}>

@@ -79,7 +79,7 @@ function Header(props) {
                   </Link>
                 </li>
                 <li class="header__account--items">
-                  <Link to='/cart' class="header__account--btn minicart__open--btn" data-offcanvas>
+                  <Link to='/checkout' class="header__account--btn minicart__open--btn" data-offcanvas>
                     <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443" viewBox="0 0 14.706 13.534">
                       <g  transform="translate(0 0)">
                         <g>
