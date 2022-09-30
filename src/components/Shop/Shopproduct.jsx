@@ -13,7 +13,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items ">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product1} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product2} alt="product-img" />
                   </Link>
@@ -23,7 +23,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h3 class="product__items--content__title h4"><Link to="product-details.html">Oversize Cotton Dress</Link></h3>
+                  <h3 class="product__items--content__title h4"><Link to="/productdetail">Oversize Cotton Dress</Link></h3>
                   <div class="product__items--price">
                     <span class="current__price">$110</span>
                     <span class="price__divided"></span>
@@ -105,7 +105,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items ">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product3} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product4} alt="product-img" />
                   </Link>
@@ -115,7 +115,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h3 class="product__items--content__title h4"><Link to="product-details.html">Boxy Denim Jacket</Link></h3>
+                  <h3 class="product__items--content__title h4"><Link to="/productdetail">Boxy Denim Jacket</Link></h3>
                   <div class="product__items--price">
                     <span class="current__price">$120</span>
                     <span class="price__divided"></span>
@@ -197,7 +197,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product5} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product6} alt="product-img" />
                   </Link>
@@ -207,7 +207,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h4 class="product__items--content__title"><Link to="product-details.html">Quilted Shoulder Bag</Link></h4>
+                  <h4 class="product__items--content__title"><Link to="/productdetail">Quilted Shoulder Bag</Link></h4>
                   <div class="product__items--price">
                     <span class="current__price">$115</span>
                     <span class="price__divided"></span>
@@ -289,7 +289,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product7} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product8} alt="product-img" />
                   </Link>
@@ -299,7 +299,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h4 class="product__items--content__title"><Link to="product-details.html">Square Shoulder Bag</Link></h4>
+                  <h4 class="product__items--content__title"><Link to="/productdetail">Square Shoulder Bag</Link></h4>
                   <div class="product__items--price">
                     <span class="current__price">$125</span>
                     <span class="price__divided"></span>
@@ -381,7 +381,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product9} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product10} alt="product-img" />
                   </Link>
@@ -391,7 +391,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h4 class="product__items--content__title"><Link to="product-details.html">Light Denim Jacket</Link></h4>
+                  <h4 class="product__items--content__title"><Link to="/productdetail">Light Denim Jacket</Link></h4>
                   <div class="product__items--price">
                     <span class="current__price">$125</span>
                     <span class="price__divided"></span>
@@ -473,7 +473,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product11} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product12} alt="product-img" />
                   </Link>
@@ -483,7 +483,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h3 class="product__items--content__title h4"><Link to="product-details.html">Oversize Cotton Dress</Link></h3>
+                  <h3 class="product__items--content__title h4"><Link to="/productdetail">Oversize Cotton Dress</Link></h3>
                   <div class="product__items--price">
                     <span class="current__price">$128</span>
                     <span class="price__divided"></span>
@@ -565,7 +565,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product13} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product14} alt="product-img" />
                   </Link>
@@ -575,7 +575,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h4 class="product__items--content__title"><Link to="product-details.html">Aware organic cotton</Link></h4>
+                  <h4 class="product__items--content__title"><Link to="/productdetail">Aware organic cotton</Link></h4>
                   <div class="product__items--price">
                     <span class="current__price">$127</span>
                     <span class="price__divided"></span>
@@ -657,7 +657,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product14} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product15} alt="product-img" />
                   </Link>
@@ -667,7 +667,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h4 class="product__items--content__title"><Link to="product-details.html">Western denim shirt</Link></h4>
+                  <h4 class="product__items--content__title"><Link to="/productdetail">Western denim shirt</Link></h4>
                   <div class="product__items--price">
                     <span class="current__price">$115</span>
                     <span class="price__divided"></span>
@@ -749,7 +749,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product2} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product1} alt="product-img" />
                   </Link>
@@ -759,7 +759,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h3 class="product__items--content__title h4"><Link to="product-details.html">Boxy Denim Jacket</Link></h3>
+                  <h3 class="product__items--content__title h4"><Link to="/productdetail">Boxy Denim Jacket</Link></h3>
                   <div class="product__items--price">
                     <span class="current__price">$110</span>
                     <span class="price__divided"></span>
@@ -841,7 +841,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product3} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product4} alt="product-img" />
                   </Link>
@@ -851,7 +851,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h4 class="product__items--content__title"><Link to="product-details.html">High Ankle Jeans</Link></h4>
+                  <h4 class="product__items--content__title"><Link to="/productdetail">High Ankle Jeans</Link></h4>
                   <div class="product__items--price">
                     <span class="current__price">$135</span>
                     <span class="price__divided"></span>
@@ -933,7 +933,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product6} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product5} alt="product-img" />
                   </Link>
@@ -943,7 +943,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h4 class="product__items--content__title"><Link to="product-details.html">Aware organic cotton</Link></h4>
+                  <h4 class="product__items--content__title"><Link to="/productdetail">Aware organic cotton</Link></h4>
                   <div class="product__items--price">
                     <span class="current__price">$140</span>
                     <span class="price__divided"></span>
@@ -1025,7 +1025,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product8} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product7} alt="product-img" />
                   </Link>
@@ -1035,7 +1035,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h4 class="product__items--content__title"><Link to="product-details.html">OSmock Mini Dresss</Link></h4>
+                  <h4 class="product__items--content__title"><Link to="/productdetail">OSmock Mini Dresss</Link></h4>
                   <div class="product__items--price">
                     <span class="current__price">$110</span>
                     <span class="price__divided"></span>
@@ -1117,7 +1117,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product10} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product11} alt="product-img" />
                   </Link>
@@ -1127,7 +1127,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h3 class="product__items--content__title h4"><Link to="product-details.html">Oversize Cotton Dress</Link></h3>
+                  <h3 class="product__items--content__title h4"><Link to="/productdetail">Oversize Cotton Dress</Link></h3>
                   <div class="product__items--price">
                     <span class="current__price">$110</span>
                     <span class="price__divided"></span>
@@ -1209,7 +1209,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product15} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product14} alt="product-img" />
                   </Link>
@@ -1219,7 +1219,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h4 class="product__items--content__title"><Link to="product-details.html">Aware organic cotton</Link></h4>
+                  <h4 class="product__items--content__title"><Link to="/productdetail">Aware organic cotton</Link></h4>
                   <div class="product__items--price">
                     <span class="current__price">$130</span>
                     <span class="price__divided"></span>
@@ -1301,7 +1301,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product13} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product12} alt="product-img" />
                   </Link>
@@ -1311,7 +1311,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h4 class="product__items--content__title"><Link to="product-details.html">Quilted Shoulder Bag</Link></h4>
+                  <h4 class="product__items--content__title"><Link to="/productdetail">Quilted Shoulder Bag</Link></h4>
                   <div class="product__items--price">
                     <span class="current__price">$150</span>
                     <span class="price__divided"></span>
@@ -1393,7 +1393,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items">
                 <div class="product__items--thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product11} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product10} alt="product-img" />
                   </Link>
@@ -1403,7 +1403,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__items--content">
                   <span class="product__items--content__subtitle">Jacket, Women</span>
-                  <h3 class="product__items--content__title h4"><Link to="product-details.html">Oversize Cotton Dress</Link></h3>
+                  <h3 class="product__items--content__title h4"><Link to="/productdetail">Oversize Cotton Dress</Link></h3>
                   <div class="product__items--price">
                     <span class="current__price">$110</span>
                     <span class="price__divided"></span>
@@ -1491,7 +1491,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items product__list--items d-flex">
                 <div class="product__items--thumbnail product__list--items__thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product11} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product10} alt="product-img" />
                   </Link>
@@ -1501,7 +1501,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__list--items__content">
                   <span class="product__items--content__subtitle mb-5">Jacket, Women</span>
-                  <h3 class="product__list--items__content--title h4 mb-10"><Link to="product-details.html">Oversize Cotton Dress</Link></h3>
+                  <h3 class="product__list--items__content--title h4 mb-10"><Link to="/productdetail">Oversize Cotton Dress</Link></h3>
                   <div class="product__list--items__price mb-10">
                     <span class="current__price">$110</span>
                     <span class="price__divided"></span>
@@ -1584,7 +1584,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items product__list--items d-flex">
                 <div class="product__items--thumbnail product__list--items__thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product1} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product2} alt="product-img" />
                   </Link>
@@ -1594,7 +1594,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__list--items__content">
                   <span class="product__items--content__subtitle mb-5">Jacket, Women</span>
-                  <h3 class="product__list--items__content--title h4 mb-10"><Link to="product-details.html">Boxy Denim Jacket</Link></h3>
+                  <h3 class="product__list--items__content--title h4 mb-10"><Link to="/productdetail">Boxy Denim Jacket</Link></h3>
                   <div class="product__list--items__price mb-10">
                     <span class="current__price">$120</span>
                     <span class="price__divided"></span>
@@ -1677,7 +1677,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items product__list--items d-flex">
                 <div class="product__items--thumbnail product__list--items__thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product13} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product4} alt="product-img" />
                   </Link>
@@ -1687,7 +1687,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__list--items__content">
                   <span class="product__items--content__subtitle mb-5">Jacket, Women</span>
-                  <h3 class="product__list--items__content--title h4 mb-10"><Link to="product-details.html">Quilted Shoulder Bag</Link></h3>
+                  <h3 class="product__list--items__content--title h4 mb-10"><Link to="/productdetail">Quilted Shoulder Bag</Link></h3>
                   <div class="product__list--items__price mb-10">
                     <span class="current__price">$115</span>
                     <span class="price__divided"></span>
@@ -1770,7 +1770,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items product__list--items d-flex">
                 <div class="product__items--thumbnail product__list--items__thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product5} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product6} alt="product-img" />
                   </Link>
@@ -1780,7 +1780,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__list--items__content">
                   <span class="product__items--content__subtitle mb-5">Jacket, Women</span>
-                  <h3 class="product__list--items__content--title h4 mb-10"><Link to="product-details.html">Square Shoulder Bag</Link></h3>
+                  <h3 class="product__list--items__content--title h4 mb-10"><Link to="/productdetail">Square Shoulder Bag</Link></h3>
                   <div class="product__list--items__price mb-10">
                     <span class="current__price">$114</span>
                     <span class="price__divided"></span>
@@ -1863,7 +1863,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items product__list--items d-flex">
                 <div class="product__items--thumbnail product__list--items__thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product7} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product8} alt="product-img" />
                   </Link>
@@ -1873,7 +1873,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__list--items__content">
                   <span class="product__items--content__subtitle mb-5">Jacket, Women</span>
-                  <h3 class="product__list--items__content--title h4 mb-10"><Link to="product-details.html">Light Denim Jackets</Link></h3>
+                  <h3 class="product__list--items__content--title h4 mb-10"><Link to="/productdetail">Light Denim Jackets</Link></h3>
                   <div class="product__list--items__price mb-10">
                     <span class="current__price">$122</span>
                     <span class="price__divided"></span>
@@ -1956,7 +1956,7 @@ function Shopproduct(props) {
             <div class="col mb-30">
               <div class="product__items product__list--items d-flex">
                 <div class="product__items--thumbnail product__list--items__thumbnail">
-                  <Link class="product__items--link" to="product-details.html">
+                  <Link class="product__items--link" to="/productdetail">
                   <img class="product__items--img product__primary--img" src={product9} alt="product-img" />
                   <img class="product__items--img product__secondary--img" src={product10} alt="product-img" />
                   </Link>
@@ -1966,7 +1966,7 @@ function Shopproduct(props) {
                 </div>
                 <div class="product__list--items__content">
                   <span class="product__items--content__subtitle mb-5">Jacket, Women</span>
-                  <h4 class="product__list--items__content--title mb-10"><Link to="product-details.html">OSmock Mini Dresss</Link></h4>
+                  <h4 class="product__list--items__content--title mb-10"><Link to="/productdetail">OSmock Mini Dresss</Link></h4>
                   <div class="product__list--items__price mb-10">
                     <span class="current__price">$125</span>
                     <span class="price__divided"></span>
