@@ -12,7 +12,7 @@ function Header(props) {
             <div class="header__shipping">
               <ul class="header__shipping--wrapper d-flex">
                 <li class="header__shipping--text text-white">Welcome to Eloquenza Store</li>
-                <li class="header__shipping--text text-white d-sm-2-none"><i class="fa-regular fa-paper-plane"></i> <Link class="header__shipping--text__link" to="mailto:demo@gmail.com">contact.elonquenza@gmail.com</Link></li>
+                <li class="header__shipping--text text-white d-sm-2-none"><i class="fa-regular fa-paper-plane"></i> <Link class="header__shipping--text__link" to="mailto:demo@gmail.com">contact@eloquenza.com</Link></li>
               </ul>
             </div>
             <div class="language__currency d-none d-lg-block">
@@ -104,7 +104,7 @@ function Header(props) {
                     </Link>
                   </li>
                   <li class="header__menu--items style2">
-                    <Link class="header__menu--link" to="about.html">About US </Link>  
+                    <Link class="header__menu--link" to="about.html">About Us </Link>  
                   </li>
                   <li class="header__menu--items style2">
                     <Link class="header__menu--link " to="contact.html">Contact </Link>  
@@ -172,11 +172,11 @@ function Header(props) {
                 <ul class="d-flex">
                   <li class="header__menu--items">
                     <NavLink className='nav ' to='/'><a class="header__menu--link" href="/">
-                      Home 
+                      Home
                     </a></NavLink>
                   </li>
                   <li class="header__menu--items">
-                    <NavLink className='nav' to='/about'><a class="header__menu--link" href="/">About US </a> </NavLink> 
+                    <NavLink className='nav' to='/about'><a class="header__menu--link" href="/">About Us </a> </NavLink> 
                   </li>
                   <li class="header__menu--items">
                     <NavLink className='nav' to='/contact'><a class="header__menu--link" href="/">Contact </a>  </NavLink>
@@ -221,7 +221,7 @@ function Header(props) {
               <li class="offcanvas__menu_li">
                 <Link class="offcanvas__menu_item" to="#">Pages</Link>
               </li>
-              <li class="offcanvas__menu_li"><Link class="offcanvas__menu_item" to="about.html">About</Link></li>
+              <li class="offcanvas__menu_li"><Link class="offcanvas__menu_item" to="about.html">About us</Link></li>
               <li class="offcanvas__menu_li"><Link class="offcanvas__menu_item" to="contact.html">Contact</Link></li>
             </ul>
             <div class="offcanvas__account--items">

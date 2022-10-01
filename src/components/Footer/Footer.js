@@ -6,9 +6,9 @@ function Footer(props) {
   return (
     <footer class="footer__section bg__black">
       <div class="container-fluid">
-        <div class="main__footer d-flex .justify-content-between row">
-          <div class="footer__widget .footer__widget--width col-lg-7">
-            <h2 class="footer__widget--title text-ofwhite h3">
+        <div class="main__footer d-flex row">
+          <div class="footer__widget col-lg-7 col-12">
+            <h2 class=".footer__widget--title text-ofwhite h3">
               About Us 
               <button class="footer__widget--button" aria-label="footer widget button">
                 <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
