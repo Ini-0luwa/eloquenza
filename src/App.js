@@ -15,6 +15,7 @@ import Checkout2 from './components/Checkout/Checkout2';
 import Checkout3 from './components/Checkout/Checkout3';
 import Checkout4 from './components/Checkout/Checkout4';
 import Productdetails from './components/Details/Productdetails';
+import Faqpage from './pages/faqsection/Faqpage';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path='/checkout4' element={<Checkout4 />}/>
             <Route path='/productdetail' element={<Productdetails />}/>
             <Route path='*' element={<Home />}/> 
+            <Route path='/faq' element={<Faqpage />}/> 
           </Route>
 
           <Route element={<Layout2 />}>

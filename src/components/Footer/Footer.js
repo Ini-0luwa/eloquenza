@@ -70,12 +70,12 @@ Our products does not contain Hydroquinone , steroids, or any bleaching chemical
                 </button>
               </h2>
               <ul class="footer__widget--menu footer__widget--inner">
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="about.html">About Us</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="contact.html">Contact Us</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="portfolio.html">Portfolio</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="privacy-policy.html">Privacy Policy</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="compare.html">Compare</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="faq.html">Frequently</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/about">About Us</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/contact">Contact Us</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/portfolio">Portfolio</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/privacy-policy">Privacy Policy</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/compare">Compare</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/faq">Frequently</Link></li>
               </ul>
             </div>
             <div class="footer__widget">
@@ -88,12 +88,12 @@ Our products does not contain Hydroquinone , steroids, or any bleaching chemical
                 </button>
               </h2>
               <ul class="footer__widget--menu footer__widget--inner">
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="about.html">About Us</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="contact.html">Contact Us</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="portfolio.html">Portfolio</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="privacy-policy.html">Privacy Policy</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="compare.html">Compare</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="faq.html">Frequently</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/about">About Us</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/contact">Contact Us</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/portfolio">Portfolio</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/privacy-policy">Privacy Policy</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/compare">Compare</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/faq">Frequently</Link></li>
               </ul>
             </div>
           </div>

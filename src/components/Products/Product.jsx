@@ -40,13 +40,26 @@ function Product(){
       <div class="section__heading text-center mb-35">
         <h2 class="section__heading--maintitle">New Products</h2>
       </div>
-      <ul class="product__tab--one product__tab--primary__btn d-flex justify-content-center mb-50">
-        <li class="product__tab--primary__btn__list active" data-toggle="tab" data-target="#featured">Skincare </li>
-        <li class="product__tab--primary__btn__list" data-toggle="tab" data-target="#trending">Clothing </li>
-        <li class="product__tab--primary__btn__list" data-toggle="tab" data-target="#newarrival">Hairs </li>
+      <ul class="nav product__tab--one product__tab--primary__btn d-flex justify-content-center mb-50">
+        <li class="product__tab--primary__btn__list">
+          <a href="*" class=".nav-link active" id=".home-tab" data-bs-toggle="tab" data-bs-target="#skincare" type=".button" role="tab" aria-controls=".home" aria-selected="true">
+            Skincare
+          </a> 
+        </li>
+        <li class="product__tab--primary__btn__list">
+          <a href="*" class=".nav-link" id=".home-tab" data-bs-toggle="tab" data-bs-target="#clothing" type=".button" role="tab" aria-controls=".home" aria-selected="true">
+            Clothing
+          </a> 
+        </li>
+        <li class="product__tab--primary__btn__list">
+          <a href="*" class=".nav-link" id=".home-tab" data-bs-toggle="tab" data-bs-target="#hairs" type=".button" role="tab" aria-controls=".home" aria-selected="true">
+            Hairs
+          </a> 
+        </li>
       </ul>
-      <div class="tab_content">
-        <div id="featured" class="tab_pane active show">
+
+      <div class="tab-content" id="myTabContent">
+        <div id="skincare" class="tab-pane fade show active " role="tabpanel" aria-labelledby="skincare-tab">
           <div class="product__section--inner">
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
               <div class="col mb-30">
@@ -972,7 +985,7 @@ function Product(){
             </div>
           </div>
         </div>
-        <div id="trending" class="tab_pane">
+        <div id="clothing" class="tab-pane fade" role="tabpanel" aria-labelledby="clothing-tab">
           <div class="product__section--inner">
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
               <div class="col mb-30">
@@ -1898,7 +1911,7 @@ function Product(){
             </div>
           </div>
         </div>
-        <div id="newarrival" class="tab_pane">
+        <div id="hairs" class="tab-pane fade" role="tabpanel" aria-labelledby="hairs-tab">
           <div class="product__section--inner">
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
               <div class="col mb-30">
@@ -2181,8 +2194,8 @@ function Product(){
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
                     <Link class="product__items--link" to="/productdetail">
-                    <img class="product__items--img product__primary--img" src="assets/img/product/product12.png" alt="product-img" />
-                    <img class="product__items--img product__secondary--img" src="assets/img/product/product13.png" alt="product-img" />
+                    <img class="product__items--img product__primary--img" src={product12} alt="product-img" />
+                    <img class="product__items--img product__secondary--img" src={product13} alt="product-img" />
                     </Link>
                     <div class="product__badge">
                       <span class="product__badge--items sale">Sale</span>
@@ -2273,8 +2286,8 @@ function Product(){
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
                     <Link class="product__items--link" to="/productdetail">
-                    <img class="product__items--img product__primary--img" src="assets/img/product/product1.png" alt="product-img" />
-                    <img class="product__items--img product__secondary--img" src="assets/img/product/product2.png" alt="product-img" />
+                    <img class="product__items--img product__primary--img" src={product1} alt="product-img" />
+                    <img class="product__items--img product__secondary--img" src={product2} alt="product-img" />
                     </Link>
                     <div class="product__badge">
                       <span class="product__badge--items sale">Sale</span>
@@ -2365,8 +2378,8 @@ function Product(){
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
                     <Link class="product__items--link" to="/productdetail">
-                    <img class="product__items--img product__primary--img" src="assets/img/product/product3.png" alt="product-img" />
-                    <img class="product__items--img product__secondary--img" src="assets/img/product/product4.png" alt="product-img" />
+                    <img class="product__items--img product__primary--img" src={product3} alt="product-img" />
+                    <img class="product__items--img product__secondary--img" src={product4} alt="product-img" />
                     </Link>
                     <div class="product__badge">
                       <span class="product__badge--items sale">Sale</span>
@@ -2457,8 +2470,8 @@ function Product(){
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
                     <Link class="product__items--link" to="/productdetail">
-                    <img class="product__items--img product__primary--img" src="assets/img/product/product5.png" alt="product-img" />
-                    <img class="product__items--img product__secondary--img" src="assets/img/product/product11.png" alt="product-img" />
+                    <img class="product__items--img product__primary--img" src={product5} alt="product-img" />
+                    <img class="product__items--img product__secondary--img" src={product11} alt="product-img" />
                     </Link>
                     <div class="product__badge">
                       <span class="product__badge--items sale">Sale</span>
@@ -2549,8 +2562,8 @@ function Product(){
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
                     <Link class="product__items--link" to="/productdetail">
-                    <img class="product__items--img product__primary--img" src="assets/img/product/product11.png" alt="product-img" />
-                    <img class="product__items--img product__secondary--img" src="assets/img/product/product8.png" alt="product-img" />
+                    <img class="product__items--img product__primary--img" src={product11} alt="product-img" />
+                    <img class="product__items--img product__secondary--img" src={product8} alt="product-img" />
                     </Link>
                     <div class="product__badge">
                       <span class="product__badge--items sale">Sale</span>
@@ -2641,8 +2654,8 @@ function Product(){
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
                     <Link class="product__items--link" to="/productdetail">
-                    <img class="product__items--img product__primary--img" src="assets/img/product/product14.png" alt="product-img" />
-                    <img class="product__items--img product__secondary--img" src="assets/img/product/product15.png" alt="product-img" />
+                    <img class="product__items--img product__primary--img" src={product14} alt="product-img" />
+                    <img class="product__items--img product__secondary--img" src={product15} alt="product-img" />
                     </Link>
                     <div class="product__badge">
                       <span class="product__badge--items sale">Sale</span>
@@ -2733,8 +2746,8 @@ function Product(){
                 <div class="product__items ">
                   <div class="product__items--thumbnail">
                     <Link class="product__items--link" to="/productdetail">
-                    <img class="product__items--img product__primary--img" src="assets/img/product/product2.png" alt="product-img" />
-                    <img class="product__items--img product__secondary--img" src="assets/img/product/product1.png" alt="product-img" />
+                    <img class="product__items--img product__primary--img" src={product2} alt="product-img" />
+                    <img class="product__items--img product__secondary--img" src={product1} alt="product-img" />
                     </Link>
                     <div class="product__badge">
                       <span class="product__badge--items sale">Sale</span>

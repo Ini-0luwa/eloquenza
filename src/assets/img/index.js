@@ -120,9 +120,3 @@ export const smallproduct12 = require('./product/small-product12.png');
 
 
 export const checkout = require('./other/safe-checkout.png');
-
-
-
-
-
-

@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import { logo, usd_icon, lamp_icon} from '../../assets/img'
 
 function Header(props) {
+
+  const [toggle, setToggle] = useState(false);
+
+
   return (
     // <!-- Start header area -->
     <header class="header__section">
@@ -33,7 +37,7 @@ function Header(props) {
         <div class="container-fluid">
           <div class="main__header--inner position__relative d-flex justify-content-between align-items-center">
             <div class="offcanvas__header--menu__open ">
-              <Link class="offcanvas__header--menu__open--btn" data-offcanvas>
+              <Link onClick={()=>{setToggle(!toggle)}} class="offcanvas__header--menu__open--btn" data-offcanvas>
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512">
                   <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/>
                 </svg>
@@ -149,7 +153,7 @@ function Header(props) {
                   <Link class="header__account--btn minicart__open--btn" data-offcanvas>
                     <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443" viewBox="0 0 14.706 13.534">
                       <g  transform="translate(0 0)">
-                        <g >
+                        <g>
                           <path  data-name="Path 16787" d="M4.738,472.271h7.814a.434.434,0,0,0,.414-.328l1.723-6.316a.466.466,0,0,0-.071-.4.424.424,0,0,0-.344-.179H3.745L3.437,463.6a.435.435,0,0,0-.421-.353H.431a.451.451,0,0,0,0,.9h2.24c.054.257,1.474,6.946,1.555,7.33a1.36,1.36,0,0,0-.779,1.242,1.326,1.326,0,0,0,1.293,1.354h7.812a.452.452,0,0,0,0-.9H4.74a.451.451,0,0,1,0-.9Zm8.966-6.317-1.477,5.414H5.085l-1.149-5.414Z" transform="translate(0 -463.248)" fill="currentColor"/>
                           <path  data-name="Path 16788" d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z" transform="translate(-1.191 -466.622)" fill="currentColor"/>
                           <path  data-name="Path 16789" d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z" transform="translate(-2.875 -466.622)" fill="currentColor"/>
@@ -193,12 +197,13 @@ function Header(props) {
           </div>
         </div>
       </div>
+
       {/* <!-- Start Offcanvas header menu --> */}
-      <div class="offcanvas__header">
+      <div class={toggle ? "offcanvas__header open" : "offcanvas__header"}>
         <div class="offcanvas__inner">
           <div class="offcanvas__logo">
             <Link class="offcanvas__logo_link" to="index.html">
-            <img src="assets/img/logo/nav-log.png" alt="Grocee Logo" width="158" height="36" />
+            <img src={logo} alt="Grocee Logo" width="158" height="36" />
             </Link>
             <button class="offcanvas__close--btn" data-offcanvas>close</button>
           </div>
