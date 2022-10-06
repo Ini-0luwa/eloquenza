@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import { logo, usd_icon, lamp_icon} from '../../assets/img'
 
 function Header(props) {
 
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
 
 
   return (
@@ -37,7 +37,7 @@ function Header(props) {
         <div class="container-fluid">
           <div class="main__header--inner position__relative d-flex justify-content-between align-items-center">
             <div class="offcanvas__header--menu__open ">
-              <Link onClick={()=>{setToggle(!toggle)}} class="offcanvas__header--menu__open--btn" data-offcanvas>
+              <Link class="offcanvas__header--menu__open--btn" data-offcanvas>
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512">
                   <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/>
                 </svg>
@@ -199,7 +199,7 @@ function Header(props) {
       </div>
 
       {/* <!-- Start Offcanvas header menu --> */}
-      <div class={toggle ? "offcanvas__header open" : "offcanvas__header"}>
+      <div class="offcanvas__header">
         <div class="offcanvas__inner">
           <div class="offcanvas__logo">
             <Link class="offcanvas__logo_link" to="index.html">

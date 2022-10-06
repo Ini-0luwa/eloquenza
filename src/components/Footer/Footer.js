@@ -75,7 +75,7 @@ Our products does not contain Hydroquinone , steroids, or any bleaching chemical
                 <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/portfolio">Portfolio</Link></li>
                 <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/privacy-policy">Privacy Policy</Link></li>
                 <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/compare">Compare</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/faq">Frequently</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/faq">FAQ</Link></li>
               </ul>
             </div>
             <div class="footer__widget">
@@ -93,7 +93,7 @@ Our products does not contain Hydroquinone , steroids, or any bleaching chemical
                 <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/portfolio">Portfolio</Link></li>
                 <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/privacy-policy">Privacy Policy</Link></li>
                 <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/compare">Compare</Link></li>
-                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/faq">Frequently</Link></li>
+                <li class="footer__widget--menu__list"><Link class="footer__widget--menu__text" to="/faq">FAQ</Link></li>
               </ul>
             </div>
           </div>
