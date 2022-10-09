@@ -1,5 +1,5 @@
 import React from 'react';
-import { about_thumb1, about_thumb2, signature } from '../../assets/img';
+import { about_thumb1, about_thumb2 } from '../../assets/img';
 import {Link} from 'react-router-dom';
 
 function About(props) {
@@ -44,16 +44,16 @@ function About(props) {
             </div>
             <div class="col-lg-6">
                 <div class="about__content">
-                    <span class="about__content--subtitle text__secondary mb-20"> Why Choose us</span>
-                    <h2 class="about__content--maintitle mb-25">We do not buy from the open market & traders.</h2>
-                    <p class="about__content--desc mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illo, est repellendus are quia voluptate neque reiciendis ea placeat labore maiores cum, hic ducimus ad a dolorem soluta consectetur adipisci. Perspiciatis quas ab quibusdam is.</p>
-                    <p class="about__content--desc mb-25">Itaque accusantium eveniet a laboriosam dolorem? Magni suscipit est corrupti explicabo non perspiciatis, excepturi ut asperiores assumenda rerum? Provident ab corrupti sequi, voluptates repudiandae eius odit aut.</p>
+                    <span class="about__content--subtitle text__secondary mb-20"> Brief About Us</span>
+                    <h2 class="about__content--maintitle mb-25">We sell nothing but the best</h2>
+                    <p class="about__content--desc mb-20">ome of 100% pure natural herbal and Organic products specialise in corrective skincare & skin lightening formulated to treat Hyperpigmentation, dark marks and uneven skin tones.
+Our entire product range is genuine and purely herbal and organic from plant extracts and natural essential oil carefully researched to ensure each item is safe, effective and of the highest standard.
+Our products does not contain Hydroquinone , steroids, or any bleaching chemical that damages the skin instead we use collections of plant extracts, pure herbal and organic products to create effective lightening cream to give our customers the desired results.</p>
                     <div class="about__author position__relative d-flex align-items-center">
                         <div class="about__author--left">
-                            <h4 class="about__author--name">Bruce Sutton</h4>
-                            <span class="about__author--rank">Spa Manager</span>
+                            <h4 class="about__author--name">Folashade</h4>
+                            <span class="about__author--rank fw-bold">CEO</span>
                         </div>
-                        <img class="about__author--signature display-block" src={signature} alt="signature" />
                     </div>
                 </div>
             </div>
