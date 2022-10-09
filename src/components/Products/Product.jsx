@@ -2,6 +2,7 @@ import React from 'react';
 import { product1, product10, product11, product12, product13, product14, product15, product2, product3, product4, product5, product6, product7, product8, product9 } from '../../assets/img';
 // import { productData } from '../../data';
 import {Link} from 'react-router-dom';
+import './product.css';
 
 function Product(){
 
@@ -41,18 +42,18 @@ function Product(){
         <h2 class="section__heading--maintitle">New Products</h2>
       </div>
       <ul class="nav product__tab--one product__tab--primary__btn d-flex justify-content-center mb-50">
-        <li class="product__tab--primary__btn__list">
-          <a href="*" class=".nav-link active" id=".home-tab" data-bs-toggle="tab" data-bs-target="#skincare" type=".button" role="tab" aria-controls=".home" aria-selected="true">
+        <li class="product__tab--primary__btn__list active">
+          <a href="*" class=".nav-link active" id=".home-tab" data-bs-toggle="tab" data-bs-target="#skincare" type="button" role="tab" aria-controls=".home" aria-selected="true">
             Skincare
           </a> 
         </li>
-        <li class="product__tab--primary__btn__list">
-          <a href="*" class=".nav-link" id=".home-tab" data-bs-toggle="tab" data-bs-target="#clothing" type=".button" role="tab" aria-controls=".home" aria-selected="true">
+        <li class="product__tab--primary__btn__list ">
+          <a href="*" class=".nav-link" id=".home-tab" data-bs-toggle="tab" data-bs-target="#clothing" type="button" role="tab" aria-controls=".home" aria-selected="true">
             Clothing
           </a> 
         </li>
-        <li class="product__tab--primary__btn__list">
-          <a href="*" class=".nav-link" id=".home-tab" data-bs-toggle="tab" data-bs-target="#hairs" type=".button" role="tab" aria-controls=".home" aria-selected="true">
+        <li class="product__tab--primary__btn__list ">
+          <a href="*" class=".nav-link" id=".home-tab" data-bs-toggle="tab" data-bs-target="#hairs" type="button" role="tab" aria-controls=".home" aria-selected="true">
             Hairs
           </a> 
         </li>

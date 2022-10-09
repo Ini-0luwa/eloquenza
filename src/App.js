@@ -34,13 +34,13 @@ function App() {
             <Route path='/productdetail' element={<Productdetails />}/>
             <Route path='*' element={<Home />}/> 
             <Route path='/faq' element={<Faqpage />}/> 
+            <Route element={<Layout2 />}>
+              <Route path='/checkout' element={<Checkout1 />}/>
+              <Route path='/checkout2' element={<Checkout2 />}/>
+              <Route path='/checkout3' element={<Checkout3 />}/>
+            </Route>
           </Route>
 
-          <Route element={<Layout2 />}>
-            <Route path='/checkout' element={<Checkout1 />}/>
-            <Route path='/checkout2' element={<Checkout2 />}/>
-            <Route path='/checkout3' element={<Checkout3 />}/>
-          </Route>
 
         </Routes>
 

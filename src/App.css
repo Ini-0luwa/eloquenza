@@ -2271,11 +2271,11 @@ body.overlay__active::before {
 
 .offcanvas__header--menu__open {
   line-height: 1;
-  display: none
+  display: none;
 }
 
 .offcanvas__header--menu__open--btn>* {
-  pointer-events: none
+  pointer-events: none;
 }
 
 @media only screen and (max-width:991px) {
@@ -2285,7 +2285,7 @@ body.overlay__active::before {
 }
 
 .offcanvas__header--menu__open--svg {
-  width: 32px
+  width: 32px;
 }
 
 .offcanvas__header {
@@ -2304,12 +2304,12 @@ body.overlay__active::before {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .15);
   box-shadow: 0 0 10px rgba(0, 0, 0, .15);
   opacity: 0;
-  visibility: hidden
+  visibility: hidden;
 }
 
 @media only screen and (min-width:480px) {
   .offcanvas__header {
-    max-width: 320px
+    max-width: 320px;
   }
 }
 
@@ -2317,7 +2317,7 @@ body.overlay__active::before {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
-  visibility: visible
+  visibility: visible;
 }
 
 .offcanvas__header.open~.offcanvas-overlay {

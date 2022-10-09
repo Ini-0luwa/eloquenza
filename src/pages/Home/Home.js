@@ -12,7 +12,7 @@ function Home(props) {
       <Banner4 />
       {/* <Productitems /> */}
       <Product />
-      {/* <Productitems /> */}
+    {/* <Productitems /> */}
     </div>
   );
 }
