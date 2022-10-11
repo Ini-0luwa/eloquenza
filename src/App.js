@@ -19,7 +19,7 @@ import Faqpage from './pages/faqsection/Faqpage';
 
 function App() {
   return (
-    <div className="">
+    <div>
 
         <Routes>
           <Route element={<Layout />}>
@@ -40,7 +40,6 @@ function App() {
               <Route path='/checkout3' element={<Checkout3 />}/>
             </Route>
           </Route>
-
 
         </Routes>
 

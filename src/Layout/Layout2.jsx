@@ -4,9 +4,9 @@ import CheckoutAside from '../components/Checkout/CheckoutAside';
 
 function Layout2(props) {
   return (
-<div class="checkout__page--area">
-  <div class="container">
-    <div class="checkout__page--inner d-flex">
+<div className="checkout__page--area">
+  <div className="container">
+    <div className="checkout__page--inner d-flex">
       <Outlet />
       <CheckoutAside />
     </div>

@@ -5,11 +5,11 @@ import SIdebar from '../../components/Shop/SIdebar';
 
 function Shoppage(props) {
   return (
-    <section class="shop__section section--padding">
-      <div class="container-fluid">
+    <section className="shop__section section--padding">
+      <div className="container-fluid">
         <Heading />
 
-        <div class="row">
+        <div className="row">
           <SIdebar />
           <Shopproduct />
         </div>
