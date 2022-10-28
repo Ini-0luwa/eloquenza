@@ -8,19 +8,19 @@ function Slider(props) {
   <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
     <div className="carousel-inner">
       <div className="carousel-item active" data-bs-interval="10000">
-        <img src={slider1} className="d-block w-100" alt="..." />
+        <img src={slider1} className="d-block img-fluid" alt="..." />
       </div>
       <div className="carousel-item" data-bs-interval="2000">
-        <img src={slider2} className="d-block w-100" alt="..." />
+        <img src={slider2} className="d-block w-100 h-100" alt="..." />
       </div>
       <div className="carousel-item">
-        <img src={slider3} className="d-block w-100" alt="..." />
+        <img src={slider3} className="d-block w-100 h-100" alt="..." />
       </div>
       <div className="carousel-item">
-        <img src={slider4} className="d-block w-100" alt="..." />
+        <img src={slider4} className="d-block w-100 h-100" alt="..." />
       </div>
       <div className="carousel-item">
-        <img src={slider5} className="d-block w-100" alt="..." />
+        <img src={slider5} className="d-block w-100 h-100" alt="..." />
       </div>
     </div>
     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

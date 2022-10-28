@@ -16,37 +16,37 @@ function Contact(props) {
           <div class="row">
             <div class="col-lg-6 col-md-6">
               <div class="contact__form--list mb-20">
-                <label class="contact__form--label" for="input1">First Name <span class="contact__form--label__star">*</span></label>
+                <label class="contact__form--label" htmlFor="input1">First Name <span class="contact__form--label__star">*</span></label>
                 <input class="contact__form--input" name="firstname" id="input1" placeholder="Your First Name" type="text" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6">
               <div class="contact__form--list mb-20">
-                <label class="contact__form--label" for="input2">Last Name <span class="contact__form--label__star">*</span></label>
+                <label class="contact__form--label" htmlFor="input2">Last Name <span class="contact__form--label__star">*</span></label>
                 <input class="contact__form--input" name="lastname" id="input2" placeholder="Your Last Name" type="text" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6">
               <div class="contact__form--list mb-20">
-                <label class="contact__form--label" for="input3">Phone Number <span class="contact__form--label__star">*</span></label>
+                <label class="contact__form--label" htmlFor="input3">Phone Number <span class="contact__form--label__star">*</span></label>
                 <input class="contact__form--input" name="number" id="input3" placeholder="Phone number" type="number" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6">
               <div class="contact__form--list mb-20">
-                <label class="contact__form--label" for="input4">Email <span class="contact__form--label__star">*</span></label>
+                <label class="contact__form--label" htmlFor="input4">Email <span class="contact__form--label__star">*</span></label>
                 <input class="contact__form--input" name="email" id="input4" placeholder="Email" type="email" />
               </div>
             </div>
             <div class="col-lg-12 col-md-12">
               <div class="contact__form--list mb-20">
-                <label class="contact__form--label" for="input4">Subject <span class="contact__form--label__star">*</span></label>
+                <label class="contact__form--label" htmlFor="input4">Subject <span class="contact__form--label__star">*</span></label>
                 <input class="contact__form--input" name="email" id="input4" placeholder="Subject" type="text" />
               </div>
             </div>
             <div class="col-12">
               <div class="contact__form--list mb-15">
-                <label class="contact__form--label" for="input5">Write Your Message <span class="contact__form--label__star">*</span></label>
+                <label class="contact__form--label" htmlFor="input5">Write Your Message <span class="contact__form--label__star">*</span></label>
                 <textarea class="contact__form--textarea" name="message" id="input5" placeholder="Write Your Message"></textarea>
               </div>
             </div>

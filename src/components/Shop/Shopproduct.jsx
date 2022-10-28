@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {} from 'react';
 // import { product1, product10, product11, product12, product13, product14, product15, product2, product3, product4, product5, product6, product7, product8, product9 } from '../../assets/img';
 import {Link} from 'react-router-dom';
 import { salesProduct } from '../../data/Shop';
@@ -11,9 +11,9 @@ function Shopproduct(props) {
       <div id="product_grid" className="tab_pane active show">
         <div className="product__section--inner product__grid--inner">
           <div className="row row-cols-xl-4 row-cols-lg-3 row-cols-md-3 row-cols-2 mb--n30">
-            {salesProduct.map((sales)=>{
+            {salesProduct.map((sales, index)=>{
               return(
-                <div className="col mb-30">
+                <div className="col mb-30" key={index}>
                   <div className="product__items ">
                     <div className="product__items--thumbnail">
                       <Link className="product__items--link" to="/productdetail">
@@ -96,7 +96,7 @@ function Shopproduct(props) {
                           <Link className="product__items--action__btn" data-open="modal1" to="">
                             <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg"  width="25.51" height="23.443" viewBox="0 0 512 512">
                               <path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" strokeLineCap="round" stroke-linejoin="round" strokeWidth="32"/>
-                              <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" strokeWidth="32"/>
+                              <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/>
                             </svg>
                             <span className="visually-hidden">Quick View</span>
                           </Link>

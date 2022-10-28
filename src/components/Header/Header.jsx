@@ -38,7 +38,7 @@ function Header(props) {
             <div className="offcanvas__header--menu__open ">
               <Link className="offcanvas__header--menu__open--btn" data-offcanvas onClick={() =>setToggle(!toggle)}>
                 {!toggle ? <svg xmlns="http://www.w3.org/2000/svg" className="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512">
-                  <path fill="currentColor" stroke="currentColor" strokeLinecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/>
+                  <path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32" d="M80 160h352M80 256h352M80 352h352"/>
                 </svg>:
                 <button className=".offcanvas__close--btn" style={{marginLeft: "29rem", zIndex: "1000", fontSize: '2.5rem', border: "none", background:"transparent"}}><i class="fa-solid fa-xmark"></i></button>}
                 <span className="visually-hidden">Menu Open</span>
@@ -64,8 +64,8 @@ function Header(props) {
                   </label>
                   <button className="header__search--button bg__secondary text-white" type="submit" aria-label="search button">
                     <svg className="header__search--button__svg" xmlns="http://www.w3.org/2000/svg" width="27.51" height="26.443" viewBox="0 0 512 512">
-                      <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
-                      <path fill="none" stroke="currentColor" strokeLinecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
+                      <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"></path>
+                      <path fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32" d="M338.29 338.29L448 448"></path>
                     </svg>
                   </button>
                 </div>
@@ -76,8 +76,8 @@ function Header(props) {
                 <li className="header__account--items">
                   <Link className="header__account--btn" to="checkout4">
                     <svg xmlns="http://www.w3.org/2000/svg"  width="26.51" height="23.443" viewBox="0 0 512 512">
-                      <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="32"/>
-                      <path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
+                      <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"/>
+                      <path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/>
                     </svg>
                     <span className="header__account--btn__text">My Account</span>
                   </Link>
@@ -126,8 +126,8 @@ function Header(props) {
                 <li className="header__account--items header__account2--items  header__account--search__items d-none d-lg-block">
                   <Link className="header__account--btn search__open--btn" data-offcanvas>
                     <svg className="header__search--button__svg" xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443" viewBox="0 0 512 512">
-                      <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
-                      <path fill="none" stroke="currentColor" strokeLinecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/>
+                      <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/>
+                      <path fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32" d="M338.29 338.29L448 448"/>
                     </svg>
                     <span className="visually-hidden">Search</span>
                   </Link>
@@ -135,8 +135,8 @@ function Header(props) {
                 <li className="header__account--items header__account2--items">
                   <Link className="header__account--btn" to="my-account.html">
                     <svg xmlns="http://www.w3.org/2000/svg"  width="26.51" height="23.443" viewBox="0 0 512 512">
-                      <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="32"/>
-                      <path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
+                      <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"/>
+                      <path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/>
                     </svg>
                     <span className="visually-hidden">My Account</span>
                   </Link>
@@ -144,7 +144,7 @@ function Header(props) {
                 <li className="header__account--items header__account2--items d-none d-lg-block">
                   <Link className="header__account--btn" to="wishlist.html">
                     <svg  xmlns="http://www.w3.org/2000/svg" width="28.51" height="23.443" viewBox="0 0 512 512">
-                      <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="32"></path>
+                      <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"></path>
                     </svg>
                     <span className="items__count  wishlist style2">02</span> 
                   </Link>
@@ -227,8 +227,8 @@ function Header(props) {
                 <Link className="offcanvas__account--items__btn d-flex align-items-center" to="/login">
                   <span className="offcanvas__account--items__icon">
                     <svg xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512">
-                      <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="32"/>
-                      <path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
+                      <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"/>
+                      <path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/>
                     </svg>
                   </span>
                   <span className="offcanvas__account--items__label">Login / Register</span>
@@ -316,7 +316,7 @@ function Header(props) {
             <h2 className="minicart__title h3"> Shopping Cart</h2>
             <button className="minicart__close--btn" aria-label="minicart close button" data-offcanvas>
               <svg className="minicart__close--icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512">
-                <path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/>
+                <path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M368 368L144 144M368 144L144 368"/>
               </svg>
             </button>
           </div>
@@ -382,7 +382,7 @@ function Header(props) {
         </div>
         <div className="minicart__conditions text-center">
           <input className="minicart__conditions--input" id="accept" type="checkbox" />
-          <label className="minicart__conditions--label" for="accept">I agree with the <Link className="minicart__conditions--link" to="privacy-policy.html">Privacy and Policy</Link></label>
+          <label className="minicart__conditions--label" htmlFor="accept">I agree with the <Link className="minicart__conditions--link" to="privacy-policy.html">Privacy and Policy</Link></label>
         </div>
         <div className="minicart__button d-flex justify-content-center">
           <Link className="primary__btn minicart__button--link" to="cart.html">View cart</Link>
@@ -400,15 +400,15 @@ function Header(props) {
             </label>
             <button className="predictive__search--button" aria-label="search button" type="submit">
               <svg className="header__search--button__svg" xmlns="http://www.w3.org/2000/svg" width="30.51" height="25.443" viewBox="0 0 512 512">
-                <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
-                <path fill="none" stroke="currentColor" strokeLinecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/>
+                <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/>
+                <path fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32" d="M338.29 338.29L448 448"/>
               </svg>
             </button>
           </form>
         </div>
         <button className="predictive__search--close__btn" aria-label="search close button" data-offcanvas>
           <svg className="predictive__search--close__icon" xmlns="http://www.w3.org/2000/svg" width="40.51" height="30.443"  viewBox="0 0 512 512">
-            <path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/>
+            <path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M368 368L144 144M368 144L144 368"/>
           </svg>
         </button>
       </div>

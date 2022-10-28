@@ -47,4 +47,3 @@ export const aboutData = [
     author_title: 'CEO'
   }
 ]
-

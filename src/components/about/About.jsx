@@ -5,20 +5,20 @@ import { aboutData } from '../../data/Alldata';
 
 function About(props) {
   return (
-    <section class="about__section section--padding mb-95">
-      <div class="container">
-        {aboutData.map((about)=>{
+    <section className="about__section section--padding mb-95">
+      <div className="container">
+        {aboutData.map((about, index)=>{
           return(
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="about__thumb d-flex">
-                  <div class="about__thumb--items">
-                    <img class="about__thumb--img border-radius-5 display-block" src={about.img} alt="about-thumb" />
+            <div className="row" key={index}>
+              <div className="col-lg-6">
+                <div className="about__thumb d-flex">
+                  <div className="about__thumb--items">
+                    <img className="about__thumb--img border-radius-5 display-block" src={about.img} alt="about-thumb" />
                   </div>
-                  <div class="about__thumb--items position__relative">
-                    <img class="about__thumb--img border-radius-5 display-block" src={about.img2} alt="about-thumb" />
-                    <div class="banner__bideo--play about__thumb--play">
-                      <Link class="banner__bideo--play__icon about__thumb--play__icon glightbox" to="https://vimeo.com/115041822" data-gallery="video">
+                  <div className="about__thumb--items position__relative">
+                    <img className="about__thumb--img border-radius-5 display-block" src={about.img2} alt="about-thumb" />
+                    <div className="banner__bideo--play about__thumb--play">
+                      <Link className="banner__bideo--play__icon about__thumb--play__icon glightbox" to="https://vimeo.com/115041822" data-gallery="video">
                       <svg id="play" xmlns="http://www.w3.org/2000/svg" width="40.302" height="40.302" viewBox="0 0 46.302 46.302">
                         <g id="Group_193" data-name="Group 193" transform="translate(0 0)">
                           <path id="Path_116" data-name="Path 116" d="M39.521,6.781a23.151,23.151,0,0,0-32.74,32.74,23.151,23.151,0,0,0,32.74-32.74ZM23.151,44.457A21.306,21.306,0,1,1,44.457,23.151,21.33,21.33,0,0,1,23.151,44.457Z" fill="currentColor"/>
@@ -39,21 +39,21 @@ function About(props) {
                           </g>
                         </g>
                       </svg>
-                      <span class="visually-hidden">Video Play</span>
+                      <span className="visually-hidden">Video Play</span>
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="about__content">
-                  <span class="about__content--subtitle text__secondary mb-20"> {about.title}</span>
-                  <h2 class="about__content--maintitle mb-25">{about.heading}</h2>
-                  <p class="about__content--desc mb-20">{about.desc}</p>
-                  <div class="about__author position__relative d-flex align-items-center">
-                    <div class="about__author--left">
-                      <h4 class="about__author--name">{about.author}</h4>
-                      <span class="about__author--rank fw-bold">{about.author_title}</span>
+              <div className="col-lg-6">
+                <div className="about__content">
+                  <span className="about__content--subtitle text__secondary mb-20"> {about.title}</span>
+                  <h2 className="about__content--maintitle mb-25">{about.heading}</h2>
+                  <p className="about__content--desc mb-20">{about.desc}</p>
+                  <div className="about__author position__relative d-flex align-items-center">
+                    <div className="about__author--left">
+                      <h4 className="about__author--name">{about.author}</h4>
+                      <span className="about__author--rank fw-bold">{about.author_title}</span>
                     </div>
                   </div>
                 </div>

@@ -190,7 +190,7 @@ function SIdebar(props) {
       <form className="price__filter--form" action="#">
         <div className="price__filter--form__inner mb-15 d-flex align-items-center">
           <div className="price__filter--group">
-            <label className="price__filter--label" for="Filter-Price-GTE2">From</label>
+            <label className="price__filter--label" htmlFor="Filter-Price-GTE2">From</label>
             <div className="price__filter--input border-radius-5 d-flex align-items-center">
               <span className="price__filter--currency">$</span>
               <label>
@@ -202,7 +202,7 @@ function SIdebar(props) {
             <span>-</span>
           </div>
           <div className="price__filter--group">
-            <label className="price__filter--label" for="Filter-Price-LTE2">To</label>
+            <label className="price__filter--label" htmlFor="Filter-Price-LTE2">To</label>
             <div className="price__filter--input border-radius-5 d-flex align-items-center">
               <span className="price__filter--currency">$</span>
               <label>

@@ -17,6 +17,7 @@ import Checkout4 from './components/Checkout/Checkout4';
 import Productdetails from './components/Details/Productdetails';
 import Faqpage from './pages/faqsection/Faqpage';
 
+
 function App() {
   return (
     <div>
@@ -37,7 +38,7 @@ function App() {
             <Route element={<Layout2 />}>
               <Route path='/checkout' element={<Checkout1 />}/>
               <Route path='/checkout2' element={<Checkout2 />}/>
-              <Route path='/checkout3' element={<Checkout3 />}/>
+              <Route path='/checkout3/' element={<Checkout3 />}/>
             </Route>
           </Route>
 

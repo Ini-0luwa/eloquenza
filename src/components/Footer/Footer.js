@@ -8,9 +8,9 @@ function Footer(props) {
     <footer className="footer__section bg__black">
       <div className="container-fluid">
         <div className="main__footer .d-flex row">
-          {footerAbout.map((about)=>{
+          {footerAbout.map((about, index)=>{
             return(
-              <div className="footer__widget col-lg-7 col-12">
+              <div className="footer__widget col-lg-7 col-12" key={index}>
                 <h2 className="footer__widget--title text-ofwhite h3">
                   {about.tag}
                 </h2>

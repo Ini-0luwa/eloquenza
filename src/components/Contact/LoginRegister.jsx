@@ -8,11 +8,11 @@ function LoginRegister(props) {
    
 
   return (
-    <div class="login__section section--padding">
-      <div class="container">
+    <div className="login__section section--padding">
+      <div className="container">
         <form action="#">
-          <div class="login__section--inner">
-            <div class="row row-cols-md-2 row-cols-1">
+          <div className="login__section--inner">
+            <div className="row row-cols-md-2 row-cols-1">
               <Register />
               <Login />
             </div>

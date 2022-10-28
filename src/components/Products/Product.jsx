@@ -1,28 +1,42 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 // import { product1, product10, product11, product12, product13, product14, product15, product2, product3, product4, product5, product6, product7, product8, product9 } from '../../assets/img';
 import {Link} from 'react-router-dom';
 import { Clothing, Hairs, skinCares } from './data';
+import { STORE_ENDPOINT } from '../../utils/api_client';
 
 function Product(){
+
+  const [store, setStore] = useState({})
+
+  useEffect(()=>{
+    const fetchStore = async () =>{
+      let response = await axios.get(STORE_ENDPOINT.STORE);
+      setStore(response.data)
+      // console.log(response.data)
+    }
+    fetchStore();
+  },[])
+
   return (
     <section className="product__section section--padding pt-5 mt-5">
     <div className="container-fluid">
       <div className="section__heading text-center mb-35">
         <h2 className="section__heading--maintitle">New Products</h2>
       </div>
-      <ul className="nav product__tab--one product__tab--primary__btn d-flex justify-content-center mb-50">
+      <ul className="nav product__tab--one product__tab--primary__btn   d-flex justify-content-center mb-50">
         <li className="product__tab--primary__btn__list active">
-          <a href="*" className=".nav-link active" id=".home-tab" data-bs-toggle="tab" data-bs-target="#skincare" type="button" role="tab" aria-controls=".home" aria-selected="true">
+          <a href="#skincare" className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#skincare" type="button" role="tab" aria-controls=".home" aria-selected="true">
             Skincare
           </a> 
         </li>
         <li className="product__tab--primary__btn__list ">
-          <a href="*" className=".nav-link" id=".home-tab" data-bs-toggle="tab" data-bs-target="#clothing" type="button" role="tab" aria-controls=".home" aria-selected="true">
+          <a href="#clothing" className="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#clothing" type="button" role="tab" aria-controls=".home" aria-selected="true">
             Clothing
           </a> 
         </li>
         <li className="product__tab--primary__btn__list ">
-          <a href="*" className=".nav-link" id=".home-tab" data-bs-toggle="tab" data-bs-target="#hairs" type="button" role="tab" aria-controls=".home" aria-selected="true">
+          <a href="#hairs" className="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#hairs" type="button" role="tab" aria-controls=".home" aria-selected="true">
             Hairs
           </a> 
         </li>
@@ -35,14 +49,14 @@ function Product(){
               {skinCares.map((skincare)=>{
                 return(
                   <div className="col mb-30">
-                    <div className="product__items ">
+                    <div className="product__items" key={skincare.id}>
                       <div className="product__items--thumbnail">
                         <Link className="product__items--link" to="/productdetail">
                         <img className="product__items--img product__primary--img" src={skincare.img} alt="product-img" />
                         <img className="product__items--img product__secondary--img" src={skincare.hoverImg} alt="product-img" />
                         </Link>
                         <div className="product__badge">
-                          <span className="product__badge--items sale">{skincare.badge}</span>
+                          {/* <span className="product__badge--items sale">{skincare.badge}</span> */}
                         </div>
                       </div>
                       <div className="product__items--content">
@@ -108,7 +122,7 @@ function Product(){
                           <li className="product__items--action__list">
                             <Link className="product__items--action__btn" to="wishlist.html">
                               <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443" viewBox="0 0 512 512">
-                                <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" strokeLinejoin="round" stroke-width="32"></path>
+                                <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"></path>
                               </svg>
                               <span className="visually-hidden">Wishlist</span>
                             </Link>
@@ -116,8 +130,8 @@ function Product(){
                           <li className="product__items--action__list">
                             <Link className="product__items--action__btn" data-open="modal1">
                               <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg"  width="25.51" height="23.443" viewBox="0 0 512 512">
-                                <path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" stroke-linecap="round" strokeLinejoin="round" stroke-width="32"/>
-                                <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
+                                <path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"/>
+                                <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/>
                               </svg>
                               <span className="visually-hidden">Quick View</span>
                             </Link>
@@ -211,7 +225,7 @@ function Product(){
                           <li className="product__items--action__list">
                             <Link className="product__items--action__btn" to="wishlist.html">
                               <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443" viewBox="0 0 512 512">
-                                <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" strokeLinejoin="round" stroke-width="32"></path>
+                                <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"></path>
                               </svg>
                               <span className="visually-hidden">Wishlist</span>
                             </Link>
@@ -219,8 +233,8 @@ function Product(){
                           <li className="product__items--action__list">
                             <Link className="product__items--action__btn" data-open="modal1"  >
                               <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg"  width="25.51" height="23.443" viewBox="0 0 512 512">
-                                <path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" stroke-linecap="round" strokeLinejoin="round" stroke-width="32"/>
-                                <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
+                                <path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"/>
+                                <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/>
                               </svg>
                               <span className="visually-hidden">Quick View</span>
                             </Link>
@@ -314,7 +328,7 @@ function Product(){
                           <li className="product__items--action__list">
                             <Link className="product__items--action__btn" to="wishlist.html">
                               <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443" viewBox="0 0 512 512">
-                                <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" strokeLinejoin="round" stroke-width="32"></path>
+                                <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"></path>
                               </svg>
                               <span className="visually-hidden">Wishlist</span>
                             </Link>
@@ -322,8 +336,8 @@ function Product(){
                           <li className="product__items--action__list">
                             <Link className="product__items--action__btn" data-open="modal1"  >
                               <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg"  width="25.51" height="23.443" viewBox="0 0 512 512">
-                                <path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" stroke-linecap="round" strokeLinejoin="round" stroke-width="32"/>
-                                <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
+                                <path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"/>
+                                <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/>
                               </svg>
                               <span className="visually-hidden">Quick View</span>
                             </Link>

@@ -4,27 +4,27 @@ import { dealBanner } from '../../data/Alldata';
 
 function Banner4(props) {
   return (
-    <section class=".deals__banner--section .section--padding pt-0">
-    <div class="container-fluid">
-      <div class="deals__banner--inner banner__bg">
-        <div class="row row-cols-1 align-items-center">
-          <div class="col">
+    <section className=".deals__banner--section .section--padding pt-0">
+    <div className="container-fluid">
+      <div className="deals__banner--inner banner__bg">
+        <div className="row row-cols-1 align-items-center">
+          <div className="col">
             {dealBanner.map((banner, index)=>{
               return(
-                <div class="deals__banner--content position__relative">
-                  <span class="deals__banner--content__subtitle text__secondary">{banner.badge}</span>
-                  <h2 class="deals__banner--content__maintitle">{banner.title}</h2>
-                  <p class="deals__banner--content__desc">{banner.desc}</p>
-                  <div class="deals__banner--countdown d-flex" data-countdown="Sep 30, 2022 00:00:00"></div>
-                  <Link class="primary__btn" to="shop.html">
+                <div className="deals__banner--content position__relative" key={index}>
+                  <span className="deals__banner--content__subtitle text__secondary">{banner.badge}</span>
+                  <h2 className="deals__banner--content__maintitle">{banner.title}</h2>
+                  <p className="deals__banner--content__desc">{banner.desc}</p>
+                  <div className="deals__banner--countdown d-flex" data-countdown="Sep 30, 2022 00:00:00"></div>
+                  <Link className="primary__btn" to="shop.html">
                     {banner.btnText}
-                    <svg class="primary__btn--arrow__icon" xmlns="http://www.w3.org/2000/svg" width="20.2" height="12.2" viewBox="0 0 6.2 6.2">
+                    <svg className="primary__btn--arrow__icon" xmlns="http://www.w3.org/2000/svg" width="20.2" height="12.2" viewBox="0 0 6.2 6.2">
                       <path d="M7.1,4l-.546.546L8.716,6.713H4v.775H8.716L6.554,9.654,7.1,10.2,9.233,8.067,10.2,7.1Z" transform="translate(-4 -4)" fill="currentColor"></path>
                     </svg>
                   </Link>
                   <br />
-                  <div class="banner__bideo--play">
-                    <Link class="banner__bideo--play__icon glightbox" to="https://vimeo.com/115041822" data-gallery="video">
+                  <div className="banner__bideo--play">
+                    <Link className="banner__bideo--play__icon glightbox" to="https://vimeo.com/115041822" data-gallery="video">
                       <svg id="play" xmlns="http://www.w3.org/2000/svg" width="40.302" height="40.302" viewBox="0 0 46.302 46.302">
                         <g id="Group_193" data-name="Group 193" transform="translate(0 0)">
                           <path id="Path_116" data-name="Path 116" d="M39.521,6.781a23.151,23.151,0,0,0-32.74,32.74,23.151,23.151,0,0,0,32.74-32.74ZM23.151,44.457A21.306,21.306,0,1,1,44.457,23.151,21.33,21.33,0,0,1,23.151,44.457Z" fill="currentColor"/>
@@ -45,7 +45,7 @@ function Banner4(props) {
                           </g>
                         </g>
                       </svg>
-                      <span class="visually-hidden">Video Play</span>
+                      <span className="visually-hidden">Video Play</span>
                     </Link>
                   </div>
                 </div>
