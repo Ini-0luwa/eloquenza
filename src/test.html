@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="endpoints.js"></script>
+    
+</head>
+<body>
+
+    <form action="POST" id="loginForm">
+        <input type="text" name="phone_number" placeholder="Phone number" id="phone_number">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+
+    <div>
+        Homepage.
+        <br>
+        <div id="welcome"></div>
+    </div>
+    
+    <script>
+        var account = new AccountAPI()
+        
+        jQuery(()=>{
+            $("#loginForm").submit((e)=>{
+                e.preventDefault()
+                let phone = $("#phone_number").val()
+                let password = $("#password").val()
+                //account.login(phone="08026785522", password="Femi@01#")
+                //account.login(phone_number=phone, password=password)
+                .then((result) => {
+                    //alert(JSON.stringify(result))
+                    firstName = result.first_name
+                    if(firstName){
+                        let site = site_details()
+                        let token = site.user.token
+                        let phoneNuber = site.user.phone_number
+                        $("#welcome").html(`Welcome ${firstName}!, your token is: ${token}. Your phone number is: ${phoneNuber}`)
+                    }
+                }).catch((err) => {
+                    
+                });
+            })
+        })
+    </script>
+
+</body>
+</html>
