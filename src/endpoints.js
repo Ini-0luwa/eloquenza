@@ -1,19 +1,19 @@
-import axios from "axios"
+// import axios from "axios"
+const axios = require('axios')
 
-const axios = require('axios');
 const store_slug = 'eloquenza'
 const base_url = `https://naijarestaurants.herokuapp.com`
 
 function site_details(){
     let details = localStorage.getItem('eloquenza')
     if(!details){
-        var eloquenza_data = {}
+        let eloquenza_data = {}
         localStorage.setItem('eloquenza', JSON.stringify(eloquenza_data))
     }
     return JSON.parse(localStorage.getItem('eloquenza'))
 }
 
-site_details()
+// site_details()
 
 class AccountAPI {
 
@@ -136,7 +136,7 @@ class StoreAPI {
             "product_id" : product_id,
             "variation_id": variation_id,
             "quantity": quantity,
-            "store": this.store,
+            "store": store_id,
             "uid": uid,
         }
         try {
@@ -261,10 +261,14 @@ class StoreAPI {
         const url = `${base_url}/store/${store_id}/products`
         try {
             const response = await axios.post(url, {headers: this.headers()})
-            const data = response.data
+            console.log(response)
+            const data = await response.data
+            console.log(data)
             return await data
-        } catch (error) {
-            return error.response.data
+        } catch (err) {
+            console.log(err)
+            return err.response.data
+
         }
     }
     //END STOREPRODUCTS
@@ -348,9 +352,9 @@ var account = new AccountAPI()
 
 var api = new StoreAPI(token='123445')
 
-// Get all stores
-const stores = api.stores()
-stores.then((result) => {
+// Get all product
+let product = api.storeProducts(store_id=store_slug)
+product.then((result) => {
     console.log(JSON.stringify(result))
 }).catch((err) => {
     console.log(err)
