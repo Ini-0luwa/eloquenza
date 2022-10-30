@@ -1,4 +1,4 @@
-// const axios = require('axios');
+const axios = require('axios');
 const store_slug = 'eloquenza'
 const base_url = `https://naijarestaurants.herokuapp.com`
 
@@ -11,7 +11,7 @@ function site_details(){
     return JSON.parse(localStorage.getItem('eloquenza'))
 }
 
-site_details()
+// site_details()
 
 class AccountAPI {
 
