@@ -1,6 +1,7 @@
-// import axios from "axios"
+import axios from "axios"
 // const axios = require('axios')
-const store_slug = 'eloquenza'
+
+// const store_slug = 'eloquenza'
 const base_url = `https://naijarestaurants.herokuapp.com`
 
 function site_details(){
@@ -68,7 +69,7 @@ class AccountAPI {
 
 }
 
-class StoreAPI {
+export class StoreAPI {
 
     constructor(token){
         this.token = token
@@ -76,7 +77,7 @@ class StoreAPI {
     }
 
     headers = () => {
-        token = localStorage.getItem('eloquenza_access_token')
+        // token = localStorage.getItem('eloquenza_access_token')
         return { 
             'accept': 'application/json', 
             'Content-Type': 'application/json',
@@ -260,13 +261,11 @@ class StoreAPI {
         const url = `${base_url}/store/${store_id}/products`
         try {
             const response = await axios.get(url)
-            console.log(response)
             const data = await response.data
             console.log(data)
             return await data
         } catch (err) {
-            console.log(err)
-            return err.response.data
+            return err
 
         }
     }
@@ -291,8 +290,9 @@ class StoreAPI {
     allStore = async () => {
         const url = `${base_url}/store/all`
         try {
-            const response = await axios.post(url, {headers: this.headers()})
+            const response = await axios.get(url)
             const data = response.data
+            console.log(data)
             return await data
         } catch (error) {
             return error.response.data
@@ -305,8 +305,10 @@ class StoreAPI {
     completeCardPayment = async () => {
         const url = `${base_url}/store/complete-card-payment`
         try {
-            const response = await axios.post(url, {headers: this.headers()})
+            const response = await axios.get(url)
+            console.log(response)
             const data = response.data
+            console.log(data)
             return await data
         } catch (error) {
             return error.response.data
@@ -319,8 +321,9 @@ class StoreAPI {
     storeOrder = async () => {
         const url = `${base_url}/store/order`
         try {
-            const response = await axios.post(url, {headers: this.headers()})
+            const response = await axios.get(url)
             const data = response.data
+            console.log(data)
             return await data
         } catch (error) {
             return error.response.data
@@ -348,15 +351,40 @@ class StoreAPI {
 var account = new AccountAPI()
 // account.login(phone="08026785522", password="Femi@01#")
 
-var api = new StoreAPI(token='123445')
+// var api = new StoreAPI(token='123445')
 
-// Get all product
-let product = api.storeProducts(store_id=store_slug)
-product.then((result) => {
-    console.log(`Response: ${JSON.stringify(result)}`)
-}).catch((err) => {
-    console.error(`Error: ${err}`)
-});
+// // Get all product
+// let product = api.storeProducts(store_id=store_slug)
+// product.then((result) => {
+//     console.log(`Response: ${JSON.stringify(result)}`)
+// }).catch((err) => {
+//     console.error(`Error: ${err}`)
+// });
+
+// Get all Store
+// let store = api.allStore()
+// store.then((result) => {
+//     console.log(`Response: ${JSON.stringify(result)}`)
+// }).catch((err) => {
+//     console.error(`Error: ${err}`)
+// });
+
+// Get completeCardPayment
+// let payment = api.completeCardPayment()
+// payment.then((result) => {
+//     console.log(`Response: ${JSON.stringify(result)}`)
+// }).catch((err) => {
+//     console.error(`Error: ${err}`)
+// });
+
+
+// Get completeCardPayment
+// let order = api.storeOrder()
+// order.then((result) => {
+//     console.log(`Response: ${JSON.stringify(result)}`)
+// }).catch((err) => {
+//     console.error(`Error: ${err}`)
+// });
 
 // Get single store
 // const store = api.singleStore(store_slug)

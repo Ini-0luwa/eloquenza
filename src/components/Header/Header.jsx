@@ -1,10 +1,42 @@
 import React, {useState} from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import { logo, usd_icon, lamp_icon} from '../../assets/img'
+import { StoreAPI } from '../../endpoints';
+import axios from 'axios'
+import { useEffect } from 'react';
+
 
 function Header(props) {
-
+   
   const [toggle, setToggle] = useState(false);
+  // let [storeData, setStoreData] = useState([]);
+  let [storeData, setStoreData] = useState({store, categories, banners, promo_products, featured_products, popular_products});
+
+  let store_id = 'eloquenza';
+  let token = '12345';
+  var api = new StoreAPI(token)
+
+  useEffect( ()=>{
+    let product = api.store(store_id)
+    product.then((res)=>{
+      setStoreData(res)
+      console.log(res)
+      console.log(res.store.settings.logo)
+      // let data = res.data
+      // console.log(data)
+    })
+    // console.log(`Response: ${JSON.stringify(product)}`)
+  }, [])
+  
+  // Get all product
+  
+  // product.then((result) => {
+  //   console.log("Here 2")
+  //     console.log(`Response: ${JSON.stringify(result)}`)
+  // })
+  // .catch((err) => {
+  //     console.error(`Error: ${err}`)
+  // });
 
   return (
     // <!-- Start header area -->
@@ -18,6 +50,11 @@ function Header(props) {
                 <li className="header__shipping--text text-white d-sm-2-none"><i className="fa-regular fa-paper-plane"></i> <Link className="header__shipping--text__link" to="mailto:demo@gmail.com">contact@eloquenza.com</Link></li>
               </ul>
             </div>
+
+            <div>
+              <p>{storeData.store}</p>
+            </div>
+
             <div className="language__currency d-none d-lg-block">
               <ul className="d-flex align-items-center">
               <select className=".header__select--inner">

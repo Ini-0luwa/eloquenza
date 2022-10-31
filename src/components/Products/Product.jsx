@@ -9,13 +9,19 @@ function Product(){
 
   const [store, setStore] = useState({})
 
-  useEffect(()=>{
-    const fetchStore = async () =>{
-      let response = await axios.get(STORE_ENDPOINT.STORE);
-      setStore(response.data)
-      // console.log(response.data)
-    }
-    fetchStore();
+  useEffect( ()=>{
+    let response = axios.get(STORE_ENDPOINT.STORE);
+    console.log(response)
+    response.then((res)=>{
+      // console.log(res.data)
+    })
+    // setStore(response.data)
+    // const fetchStore = async () =>{
+    //   let response = await axios.get(STORE_ENDPOINT.STORE);
+    //   setStore(response.data)
+    //   // console.log(response.data)
+    // }
+    // fetchStore();
   },[])
 
   return (
