@@ -267,7 +267,6 @@ class StoreAPI {
         } catch (err) {
             console.log(err)
             return err.response.data
-
         }
     }
     //END STOREPRODUCTS
