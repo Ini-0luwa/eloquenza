@@ -266,7 +266,6 @@ export class StoreAPI {
             return await data
         } catch (err) {
             return err
-
         }
     }
     //END STOREPRODUCTS
