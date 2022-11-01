@@ -22,7 +22,7 @@ export default class Header extends React.Component {
 
     const storeAPI = new StoreAPI()
     const store = await storeAPI.store('eloquenza')
-    console.log(`Store info: ${JSON.stringify(store)}`)
+    // console.log(`Store info: ${JSON.stringify(store)}`)
     this.setState({
       info: [store],
     })
@@ -57,12 +57,21 @@ export default class Header extends React.Component {
                           <span key={info.store.id}>
                             Store ID: {info.store.id} <br></br>
                             Store name: {info.store.name}<br></br>
+                            Description: {info.store.description}<br></br>
                             Merchant name: {info.store.merchant.user.first_name} {info.store.merchant.user.last_name}
                           </span>
                         )
                       }
                       </span>
                     <br></br>
+                    {/* {
+                      info
+                    } */}
+                    {/* {
+                      this.state.persons.map(
+                      person => <span key={person.id}>{person.name}</span>
+                      )
+                    } */}
                     </li>
                   <li className="header__shipping--text text-white d-sm-2-none"><i className="fa-regular fa-paper-plane"></i> <Link className="header__shipping--text__link" to="mailto:demo@gmail.com">contact@eloquenza.com</Link></li>
                 </ul>
