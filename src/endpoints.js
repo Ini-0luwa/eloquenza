@@ -86,6 +86,17 @@ export class StoreAPI {
     }
 
 
+    jsonPlaceholder = async () => {
+        const url = `https://jsonplaceholder.typicode.com/posts`
+        try{
+            const response = await axios.get(url)
+            return await response.data
+        }
+        catch (err) {
+            return err.response.data
+        }
+    }
+
     //ALL STORE
     stores = async () => {
         const url = `${this.base_url}/store`
