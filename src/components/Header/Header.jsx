@@ -10,24 +10,22 @@ export default class Header extends React.Component {
   state = {
     persons: [],
     isToggleOn: true,
-    store: {}
+    info: [],
   }
-
+  
   async componentDidMount() {
     // axios.get(`https://jsonplaceholder.typicode.com/users`)
     //   .then(res => {
     //     const persons = res.data;
     //     this.setState({ persons });
     //   })
-    const res = await axios.get('https://jsonplaceholder.typicode.com/users')
-    const persons = await res.data
-    this.setState({persons})
 
     const storeAPI = new StoreAPI()
     const store = await storeAPI.store('eloquenza')
     console.log(`Store info: ${JSON.stringify(store)}`)
-    this.setState({store})
-
+    this.setState({
+      info: [store],
+    })
   }
 
   render() {
@@ -41,6 +39,7 @@ export default class Header extends React.Component {
     //     }
     //   </ul>
     // )
+    // const m = JSON.parse(this.state.info)
     return (
       // <!-- Start header area -->
       <header className="header__section">
@@ -51,18 +50,19 @@ export default class Header extends React.Component {
                 <ul className="header__shipping--wrapper d-flex">
                   <li className="header__shipping--text text-white" >
                     Welcome to Eloquenza Store <br></br>
-                    {
-                      JSON.stringify(this.state.store.store.id)
-                    }
+                    <span>
+                      {
+                        this.state.info.map(
+                          info => 
+                          <span key={info.store.id}>
+                            Store ID: {info.store.id} <br></br>
+                            Store name: {info.store.name}<br></br>
+                            Merchant name: {info.store.merchant.user.first_name} {info.store.merchant.user.last_name}
+                          </span>
+                        )
+                      }
+                      </span>
                     <br></br>
-                    {
-                    JSON.stringify(this.state.store.store)
-                    }
-                    {/* {
-                      this.state.persons.map(
-                      person => <span key={person.id}>{person.name}</span>
-                      )
-                    } */}
                     </li>
                   <li className="header__shipping--text text-white d-sm-2-none"><i className="fa-regular fa-paper-plane"></i> <Link className="header__shipping--text__link" to="mailto:demo@gmail.com">contact@eloquenza.com</Link></li>
                 </ul>
