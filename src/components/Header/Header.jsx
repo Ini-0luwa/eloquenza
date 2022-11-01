@@ -10,24 +10,36 @@ function Header(props) {
    
   const [toggle, setToggle] = useState(false);
   // let [storeData, setStoreData] = useState([]);
-  let [storeData, setStoreData] = useState({store, categories, banners, promo_products, featured_products, popular_products});
+  let [storeData, setStoreData] = useState({});
 
-  let store_id = 'eloquenza';
-  let token = '12345';
-  var api = new StoreAPI(token)
+  // let store_id = 'eloquenza';
+  // let token = '12345';
+  // var api = new StoreAPI(token)
 
-  useEffect( ()=>{
-    let product = api.store(store_id)
-    product.then((res)=>{
-      setStoreData(res)
-      console.log(res)
-      console.log(res.store.settings.logo)
-      // let data = res.data
-      // console.log(data)
-    })
-    // console.log(`Response: ${JSON.stringify(product)}`)
-  }, [])
+  // useEffect( ()=>{
+  //   let product = api.store(store_id)
+  //   product.then((res)=>{
+  //     setStoreData(res)
+  //     console.log(res)
+  //     console.log(res.store.settings.logo)
+  //     // let data = res.data
+  //     // console.log(data)
+  //   })
+  //   // console.log(`Response: ${JSON.stringify(product)}`)
+  // }, [])
   
+
+  useEffect(()=>{
+    const url = 'https://naijarestaurants.herokuapp.com/store/'
+    const fetchStore =async () =>{
+      let response = await axios.get(url)
+      let data = await response.data
+      console.log(data.results)
+      setStoreData(data);
+    }
+    fetchStore()
+  }, [])
+
   // Get all product
   
   // product.then((result) => {
@@ -52,7 +64,8 @@ function Header(props) {
             </div>
 
             <div>
-              <p>{storeData.store}</p>
+              {/* {storeData.results}
+              {2+2} */}
             </div>
 
             <div className="language__currency d-none d-lg-block">

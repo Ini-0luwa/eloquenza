@@ -16,6 +16,7 @@ import Checkout3 from './components/Checkout/Checkout3';
 import Checkout4 from './components/Checkout/Checkout4';
 import Productdetails from './components/Details/Productdetails';
 import Faqpage from './pages/faqsection/Faqpage';
+import ClassCom from './components/deubg/ClassCom';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <div>
 
         <Routes>
+          <Route path='/' element={<ClassCom />} />
           <Route element={<Layout />}>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<AboutUs />}/>
