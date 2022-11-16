@@ -54,51 +54,6 @@ function Header(props) {
               </ul>
             </div>
 
-            <div>
-              <p>
-                {storeData.map(
-                  info => 
-                  <span>
-                    ID: {info.store.id}<br></br>
-                    Name: {info.store.name}<br></br>
-                  </span>
-                )}
-                </p>
-            </div>
-
-            <div>
-              {
-                products.map(
-                  product => 
-                  <span>
-                    Count: {product.count}<br></br>
-                    Products: {
-                      product.results.map(
-                        result => 
-                        <div>
-                          {result.name}
-                          <div>
-                          Categories: {
-                            result.categories.map(
-                              cat =>
-                              <div>
-                                {cat.name}
-                              </div>
-                            )
-                          }
-                        </div>
-                        </div>
-                      )
-                    }
-                  </span>
-                )
-              }
-            </div>
-
-            {/* <div>
-              <p>{JSON.stringify(storeData.store)}</p>
-            </div> */}
-
             <div className="language__currency d-none d-lg-block">
               <ul className="d-flex align-items-center">
               <select className=".header__select--inner">

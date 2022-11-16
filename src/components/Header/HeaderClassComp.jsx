@@ -8,8 +8,6 @@ import { useEffect } from 'react';
 
 export default class Header extends React.Component {
   state = {
-    persons: [],
-    isToggleOn: true,
     info: [],
   }
   
