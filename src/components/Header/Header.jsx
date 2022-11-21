@@ -57,11 +57,11 @@ function Header(props) {
             <div className="language__currency d-none d-lg-block">
               <ul className="d-flex align-items-center">
               <select className=".header__select--inner">
-                <option selected value="1"><img src={usd_icon} alt="currency" /><span>$ US Dollar</span> </option>
-                <option value="2"><li className="currency__items"><Link className="currency__text" to="#">CAD</Link></li></option>
-                <option value="3"><li className="currency__items"><Link className="currency__text" to="#">CNY</Link></li></option>
-                <option value="4"><li className="currency__items"><Link className="currency__text" to="#">EUR</Link></li></option>
-                <option value="5"><li className="currency__items"><Link className="currency__text" to="#">GBP</Link></li></option>
+                <option  value="1">$ US Dollar</option>
+                <option value="2">CAD</option>
+                <option value="3">CNY</option>
+                <option value="4">EUR</option>
+                <option value="5">GBP</option>
               </select>
               </ul>
             </div>
@@ -87,7 +87,7 @@ function Header(props) {
               <form className="d-flex header__search--form" action="#">
                 <div className="header__select--categories select">
                   <select className="header__select--inner">
-                    <option selected value="1">All Categories</option>
+                    <option value="1">All Categories</option>
                     <option value="2">Accessories</option>
                     <option value="3">Accessories & More</option>
                     <option value="4">Camera & Video </option>
@@ -211,20 +211,20 @@ function Header(props) {
               <nav className="header__menu--navigation">
                 <ul className="d-flex">
                   <li className="header__menu--items">
-                    <NavLink className='nav ' to='/'><a className="header__menu--link" href="/">
+                    <NavLink to='/'className="nav header__menu--link">
                       Home
-                    </a></NavLink>
+                    </NavLink>
                   </li>
-                  <li className="header__menu--items">
-                    <NavLink className='nav' to='/about'><a className="header__menu--link" href="/">About Us </a> </NavLink> 
+                  <li className="nav header__menu--items">
+                    <NavLink to='/about'className="nav header__menu--link">About Us  </NavLink> 
                   </li>
-                  <li className="header__menu--items">
-                    <NavLink className='nav' to='/contact'><a className="header__menu--link" href="/">Contact </a>  </NavLink>
+                  <li className="nav header__menu--items">
+                    <NavLink to='/contact'className="nav header__menu--link">Contact   </NavLink>
                   </li>
-                  <li className="header__menu--items mega__menu--items">
-                    <NavLink className='nav' to='/shop'><a className="header__menu--link" href="/">
+                  <li className="nav header__menu--items mega__menu--items">
+                    <NavLink className='nav' to='/shop'>
                       Shop 
-                    </a></NavLink>
+                    </NavLink>
                   </li>
                 </ul>
               </nav>

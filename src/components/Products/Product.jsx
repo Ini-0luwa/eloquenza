@@ -157,7 +157,7 @@ function Product(){
             <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
               {Clothing.map((cloth) =>{
                 return(
-                  <div className="col mb-30">
+                  <div className="col mb-30" key={cloth.id}>
                     <div className="product__items ">
                       <div className="product__items--thumbnail">
                         <Link className="product__items--link" to="/productdetail">
@@ -260,7 +260,7 @@ function Product(){
             <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
               {Hairs.map((hair)=>{
                 return(
-                  <div className="col mb-30">
+                  <div className="col mb-30" key={hair.id}>
                     <div className="product__items ">
                       <div className="product__items--thumbnail">
                         <Link className="product__items--link" to="/productdetail">

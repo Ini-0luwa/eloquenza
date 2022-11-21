@@ -45,7 +45,7 @@ export default class Header extends React.Component {
                     <span>
                       {
                         this.state.info.map(
-                          info => 
+                          (info) => 
                           <span key={info.store.id}>
                             Store ID: {info.store.id} <br></br>
                             Store name: {info.store.name}<br></br>

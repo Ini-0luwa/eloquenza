@@ -1,6 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { API_ROUTES } from '../../utils/api_client';
+import { getApi } from '../../utils/axios';
 
 function Checkout4(props) {
+  const [data, setdata] = useState([]);
+  const phone = '08987345672';
+  useEffect(() => {
+    fetchusersD();
+  }, [])
+
+  const fetchusersD = () => {
+   getApi(`${API_ROUTES.GET_USER}?phone_number=${phone}`)
+    .then((res) => {
+      setTimeout(function() {
+        // body
+        console.clear()
+        console.log(res);
+      }, 4000);
+    })
+    setTimeout(function() {
+      // body
+      // console.log(api, "fagz");
+    }, 3000);
+  //   .then((res) => {
+  //     setTimeout(function() {
+  //       console.clear()
+  //     setdata(res);
+  //     console.log(data, 'data');
+  //     // body
+  //   }, 5000);
+  // });
+  };
   return (
 <section className="my__account--section section--padding">
   <div className="container">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Home from './pages/Home/Home';
 import { Routes, Route} from 'react-router-dom';
@@ -16,9 +16,13 @@ import Checkout3 from './components/Checkout/Checkout3';
 import Checkout4 from './components/Checkout/Checkout4';
 import Productdetails from './components/Details/Productdetails';
 import Faqpage from './pages/faqsection/Faqpage';
+import getData from './utils/Apis';
 
 
 function App() {
+  useEffect(() => {
+    getData()
+  }, [])
   return (
     <div>
 

@@ -4,11 +4,12 @@
 let API ='https://naijarestaurants.herokuapp.com'
 // console.log(API);
 let slug = 'eloquenza'
-
+// https://naijarestaurants.herokuapp.com/
 export const API_ROUTES = {
-  REGISTER : `${API}/account/register`,
+  REGISTER : `${API}/account/create-account`,
   LOGIN : `${API}/account/login`,
-  GET_USER : `${API}/account/get_user`, 
+  GET_USER : `${API}/account/user`, 
+  GET_STORE: 'https://naijarestaurants.herokuapp.com/store/?page=1'
 }
 
 export const API_NAVIGATE = {
