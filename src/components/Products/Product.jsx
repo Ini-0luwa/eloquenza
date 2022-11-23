@@ -8,125 +8,12 @@ import { get } from '../../utils/axios';
 // import { get, getApi, userDetails } from '../../utils/axios';
 
 function Product(){
-  // const data = 
-  const results = [
-    {
-      "id": 0,
-      "merchant": {
-        "user": {
-          "first_name": "string",
-          "last_name": "string",
-          "is_active": true,
-          "profile": {
-            "first_name": "string",
-            "last_name": "string",
-            "is_verified": true,
-            "gender": "male",
-            "status": "active"
-          }
-        },
-        "verified": true,
-        "active": true,
-        "stores_count": "string"
-      },
-      "categories": [
-        {
-          "id": 0,
-          "name": "string",
-          "slug": "string",
-          "image": "string",
-          "featured": true,
-          "active": true,
-          "lft": 0,
-          "rght": 0,
-          "tree_id": 0,
-          "level": 0,
-          "parent": 0
-        }
-      ],
-      "settings": {
-        "accepted_currencies": [
-          {
-            "id": 0,
-            "name": "string",
-            "code": "string",
-            "symbol": "string",
-            "is_crypto": true,
-            "wallet_address": "string",
-            "active": true,
-            "created_on": "2022-11-22T17:45:19.664Z",
-            "updated_on": "2022-11-22T17:45:19.664Z"
-          }
-        ],
-        "default_currency": {
-          "id": 0,
-          "name": "string",
-          "code": "string",
-          "symbol": "string",
-          "is_crypto": true,
-          "wallet_address": "string",
-          "active": true,
-          "created_on": "2022-11-22T17:45:19.664Z",
-          "updated_on": "2022-11-22T17:45:19.664Z"
-        },
-        "logo": "string",
-        "brand_color": "string",
-        "description_bg_color": "string",
-        "description_text_color": "string",
-        "usd_rate": "string",
-        "shipper": "self",
-        "active": true,
-        "created_on": "2022-11-22T17:45:19.664Z",
-        "updated_on": "2022-11-22T17:45:19.664Z"
-      },
-      "contacts": [
-        {
-          "id": 0,
-          "contact_type": "address",
-          "content": "string",
-          "created_on": "2022-11-22T17:45:19.664Z",
-          "updated_on": "2022-11-22T17:45:19.664Z"
-        }
-      ],
-      "delivery_options": [
-        {
-          "id": 0,
-          "name": "string",
-          "description": "string",
-          "instant_delivery": true,
-          "delivery_days": 2147483647,
-          "delivery_fee": "string"
-        }
-      ],
-      "checkout_fields": [
-        {
-          "id": 0,
-          "name": "name",
-          "type": "text",
-          "placeholder": "string",
-          "required": true
-        }
-      ],
-      "payment_options": [
-        {
-          "id": 0,
-          "option": "card",
-          "description": "string"
-        }
-      ],
-      "name": "string",
-      "slug": "string",
-      "description": "string",
-      "active": true,
-      "created_on": "2022-11-22T17:45:19.665Z",
-      "updated_on": "2022-11-22T17:45:19.665Z"
-    }
-  ]
+  // const data
 
   const [store, setStore] = useState([]);
   const [loading, setLoading] = useState(false);
   const page = 1;
-  const categories = store
+  // const categories = store
   // const categories = category.id
   // useEffect( ()=>{
   //   let response = axios.get(STORE_ENDPOINT.STORE);
@@ -162,11 +49,6 @@ function Product(){
 //   //  }, 2000); 
 //   })
 //  }
-setTimeout(function() {
-  // body
-  // console.clear();
-  // console.log(results, "storeeeeeee");
-}, 1000);
   return (
     <section className="product__section section--padding pt-5 mt-5">
     <div className="container-fluid">
@@ -210,7 +92,7 @@ setTimeout(function() {
                       </div>
                       <div className="product__items--content">
                         <span className="product__items--content__subtitle">{loading ? "Loading" : ""}</span>
-                        <h3 className="product__items--content__title h4"><Link to="/productdetail">{skincare.categories}</Link></h3>
+                        <h3 className="product__items--content__title h4"><Link to="/productdetail">{}</Link></h3>
                         <div className="product__items--price">
                           <span className="current__price">{}</span>
                           <span className="price__divided"></span>

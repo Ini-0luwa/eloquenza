@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Heading(props) {
+const Heading = ({search, setSearch}) => {
+  // console.log(search);
   return (
 <div className="container shop__header bg__gray--color d-flex align-items-center justify-content-between mb-30">
   <button className="widget__filter--btn d-flex d-lg-none align-items-center" data-offcanvas>
@@ -39,7 +40,10 @@ function Heading(props) {
     <div className="product__view--mode__list product__view--search d-none d-lg-block">
       <form className="product__view--search__form" action="#">
         <label>
-        <input className="product__view--search__input border-0" placeholder="Search by" type="text" />
+        <input className="product__view--search__input border-0" placeholder="Search for ......." 
+        onChange={(e) => setSearch(e.target.value)}
+        value={search}
+        type="text" />
         </label>
         <button className="product__view--search__btn" aria-label="shop button"  type="submit">
           <svg className="product__view--search__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512">
