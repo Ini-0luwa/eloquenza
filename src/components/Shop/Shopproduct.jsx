@@ -1,9 +1,32 @@
-import React, {} from 'react';
+import React, { useEffect, useState } from 'react';
 // import { product1, product10, product11, product12, product13, product14, product15, product2, product3, product4, product5, product6, product7, product8, product9 } from '../../assets/img';
 import {Link} from 'react-router-dom';
 import { salesProduct } from '../../data/Shop';
+import { API_ROUTES } from '../../utils/api_client';
+import { get } from '../../utils/axios';
 
 function Shopproduct(props) {
+  useEffect(() => {
+    getFunc();
+  }, [])
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState(2);
+  const getFunc = () => {
+  get(`${API_ROUTES.GET_STORE2}${page}`)
+  .then((responce) => {
+    console.clear()
+    console.log(responce, "resss");
+    setData(responce.categories);
+  })
+}; 
+const increPage = () => {
+  setPage((a) => a + 1);
+  getFunc();
+};
+const decrePage = () => {
+  setPage((a) => a - 1);
+  getFunc();
+};
   return (
 <div className="col-xl-9 col-lg-8">
   <div className="shop__product--wrapper">
@@ -11,7 +34,7 @@ function Shopproduct(props) {
       <div id="product_grid" className="tab_pane active show">
         <div className="product__section--inner product__grid--inner">
           <div className="row row-cols-xl-4 row-cols-lg-3 row-cols-md-3 row-cols-2 mb--n30">
-            {salesProduct.map((sales, index)=>{
+            {data.map((sales, index)=>{
               return(
                 <div className="col mb-30" key={index}>
                   <div className="product__items ">
@@ -25,8 +48,8 @@ function Shopproduct(props) {
                       </div>
                     </div>
                     <div className="product__items--content">
-                      <span className="product__items--content__subtitle">{sales.title}</span>
-                      <h3 className="product__items--content__title h4"><Link to="/productdetail">{sales.desc}</Link></h3>
+                      <span className="product__items--content__subtitle">{sales.name}</span>
+                      <h3 className="product__items--content__title h4"><Link to="/productdetail">{sales.slug}</Link></h3>
                       <div className="product__items--price">
                         <span className="current__price">{sales.newPrice}</span>
                         <span className="price__divided"></span>
@@ -115,19 +138,21 @@ function Shopproduct(props) {
       <nav className="pagination justify-content-center">
         <ul className="pagination__wrapper d-flex align-items-center justify-content-center">
           <li className="pagination__list">
-            <Link to="" className="pagination__item--arrow  link ">
+            <Link to="" className="pagination__item--arrow  link " onClick={decrePage}>
               <svg xmlns="http://www.w3.org/2000/svg"  width="22.51" height="20.443" viewBox="0 0 512 512">
                 <path fill="none" stroke="currentColor" strokeLineCap="round" stroke-linejoin="round" strokeWidth="48" d="M244 400L100 256l144-144M120 256h292"/>
               </svg>
               <span className="visually-hidden">pagination arrow</span>
             </Link>
           </li>
-          <li className="pagination__list"><span className="pagination__item pagination__item--current">1</span></li>
-          <li className="pagination__list"><Link to="" className="pagination__item link">2</Link></li>
+          <li className="pagination__list"><span className={page === 1 ? 'pagination__item--current' : 'pagination__item'}
+           onClick={increPage}
+          >1</span></li>
+          <li className="pagination__list"><Link to="" className={page === 2 ? 'pagination__item--current' : 'pagination__item'} onClick={decrePage}>2</Link></li>
           <li className="pagination__list"><Link to="" className="pagination__item link">3</Link></li>
           <li className="pagination__list"><Link to="" className="pagination__item link">4</Link></li>
           <li className="pagination__list">
-            <Link to="shop.html" className="pagination__item--arrow  link ">
+            <Link to="shop.html" className="pagination__item--arrow  link " onClick={increPage}>
               <svg xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512">
                 <path fill="none" stroke="currentColor" strokeLineCap="round" stroke-linejoin="round" strokeWidth="48" d="M268 112l144 144-144 144M392 256H100"/>
               </svg>

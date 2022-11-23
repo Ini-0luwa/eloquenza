@@ -1,35 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { API_ROUTES } from '../../utils/api_client';
-import { getApi } from '../../utils/axios';
+import { get, getApi, userDetails } from '../../utils/axios';
 
 function Checkout4(props) {
   const [data, setdata] = useState([]);
   const phone = '08987345672';
   useEffect(() => {
     fetchusersD();
+    // setdata(userDetails);
   }, [])
+  // console.log(userDetails, "dataa");
 
   const fetchusersD = () => {
-   getApi(`${API_ROUTES.GET_USER}?phone_number=${phone}`)
-    .then((res) => {
-      setTimeout(function() {
-        // body
-        console.clear()
-        console.log(res);
-      }, 4000);
-    })
-    setTimeout(function() {
-      // body
-      // console.log(api, "fagz");
-    }, 3000);
-  //   .then((res) => {
-  //     setTimeout(function() {
-  //       console.clear()
-  //     setdata(res);
-  //     console.log(data, 'data');
-  //     // body
-  //   }, 5000);
-  // });
+   get(`${API_ROUTES.GET_USER}?phone_number=${phone}`)
+    .then((responce) => setdata(responce))
+    // .then((responce) => {
+    //   console.log(responce, "Res");
+    // })
   };
   return (
 <section className="my__account--section section--padding">
@@ -266,7 +253,7 @@ function Checkout4(props) {
         <div className="col-lg-3">
           <div className="account__details">
             <h4 className="account__details--title">Account details</h4>
-            <p className="account__details--desc">Admin <br /> Dhaka <br /> Dhaka 12119 <br /> Bangladesh</p>
+            <p className="account__details--desc">First name : {data.first_name} <br />Last name : {data.last_name} <br /> Phone  no : {data.phone_number} <br /> </p>
             <a className="account__details--link" href="my-account-2.html">View Addresses (1)</a>
           </div>
         </div>

@@ -9,7 +9,9 @@ export const API_ROUTES = {
   REGISTER : `${API}/account/create-account`,
   LOGIN : `${API}/account/login`,
   GET_USER : `${API}/account/user`, 
-  GET_STORE: 'https://naijarestaurants.herokuapp.com/store/?page=1'
+  GET_STORE: 'https://naijarestaurants.herokuapp.com/store/?page=',
+  LOCATION: `${API}/location/`,
+  GET_STORE2: `https://naijarestaurants.herokuapp.com/store/`
 }
 
 export const API_NAVIGATE = {

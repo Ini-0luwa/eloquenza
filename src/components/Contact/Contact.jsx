@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Shipping from '../Shipping/Shipping';
 import {Link} from 'react-router-dom';
+// import { getApi } from '../../utils/axios';
+// import { API_ROUTES } from '../../utils/api_client';
 
 function Contact(props) {
+  // useEffect(() => {
+  //   getApi(API_ROUTES.LOCATION, {})
+  //   .then((res) => {
+  //     setTimeout(function() {
+  //       console.log(res, "resssers");
+  //       // body
+  //     }, 5000);
+  //   })
+  // }, [])
   return (
 <section class="contact__section section--padding">
   <div class="container">

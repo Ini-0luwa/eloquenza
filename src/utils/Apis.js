@@ -13,8 +13,8 @@ function(error){
 }
 );
 getData.interceptors.response.use(function(response) {
-    console.log('response', response)
-    console.clear()
+    // console.log('response', response)
+    // console.clear()
     return response;
 }, function(error){
     return Promise.reject(error);
