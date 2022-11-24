@@ -42,6 +42,9 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault()
     postMutate(API_ROUTES.LOGIN, {phone_number: email, password}, {})
+    .then((Res) => {
+      localStorage.setItem("tokenE", token);
+    })
     // getApi(API_ROUTES.GET_STORE)
     // console.clear()
     // console.log("hello");

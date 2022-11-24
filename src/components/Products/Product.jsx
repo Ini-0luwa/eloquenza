@@ -34,9 +34,12 @@ function Product(){
     setLoading(true);
     get(`${API_ROUTES.GET_STORE}${page}`).then(responce => {
       setStore(responce.results);
+      // console.clear()
+      // console.log(store, "result");
       setLoading(false);
     });
   }, [])
+  console.clear();
 //   const fetcherss = async () => {
 //     await axios.get(`${API_ROUTES.GET_STORE}${page}`)
 //     .then((res) => {
@@ -49,6 +52,9 @@ function Product(){
 //   //  }, 2000); 
 //   })
 //  }
+const store2 = store.map((a) => a.categories);
+// console.log(store2[0]);
+const mainSStore = store2[0];
   return (
     <section className="product__section section--padding pt-5 mt-5">
     <div className="container-fluid">
@@ -76,14 +82,21 @@ function Product(){
       <div className="tab-content" id="myTabContent">
         <div id="skincare" className="tab-pane fade show active " role="tabpanel" aria-labelledby="skincare-tab">
           <div className="product__section--inner">
-            <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
-              {skinCares.map((skincare)=>{
+            {loading ? 
+              <div className='d-flex justify-content-center flex-coloumn'>
+              <div class="spinner-border text-primary" style={{height: "40px", width: '40px'}} role="status">
+              {/* <span class="sr-only">Loading...</span> */}
+               </div>
+               <small className='mx-4'>Please wait...</small>
+               </div>
+            : <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
+              {mainSStore && mainSStore.map((skincare)=>{
                 return(
                   <div className="col mb-30">
                     <div className="product__items" key={skincare.id}>
                       <div className="product__items--thumbnail">
                         <Link className="product__items--link" to="/productdetail">
-                        <img className="product__items--img product__primary--img" src={skincare.img} alt="product-img" />
+                        <img className="product__items--img product__primary--img" src='food1.jpeg' alt="product-img" />
                         {/* <img className="product__items--img product__secondary--img" alt="product-img" /> */}
                         </Link>
                         <div className="product__badge">
@@ -91,12 +104,12 @@ function Product(){
                         </div>
                       </div>
                       <div className="product__items--content">
-                        <span className="product__items--content__subtitle">{loading ? "Loading" : ""}</span>
-                        <h3 className="product__items--content__title h4"><Link to="/productdetail">{}</Link></h3>
+                        <span className="product__items--content__subtitle">{skincare.slug}</span>
+                        <h3 className="product__items--content__title h4"><Link to="/productdetail">{skincare.name}</Link></h3>
                         <div className="product__items--price">
-                          <span className="current__price">{}</span>
+                          <span className="current__price">{'$50, 000'}</span>
                           <span className="price__divided"></span>
-                          <span className="old__price">{}</span>
+                          <span className="old__price">{'$ 2000'}</span>
                         </div>
                         <ul className="rating product__rating d-flex">
                           <li className="rating__list">
@@ -173,7 +186,7 @@ function Product(){
                   </div>
                 )
               })}
-            </div>
+            </div>}
           </div>
         </div>
 

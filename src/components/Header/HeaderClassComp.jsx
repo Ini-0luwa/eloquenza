@@ -172,7 +172,10 @@ export default class Header extends React.Component {
                     <li className="header__menu--items style2">
                       <Link className="header__menu--link " to="contact.html">Contact </Link>  
                     </li>
-                    <li className="header__menu--items mega__menu--items style2">
+                    <li className="header__menu--items style2">
+                      <Link className="header__menu--link " to="contact.html">Contact </Link>  
+                    </li>
+                    <li className="header__menu--items style2">
                       <Link className="header__menu--link" to="shop.html">
                         Shop 
                       </Link>

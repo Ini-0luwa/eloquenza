@@ -222,8 +222,8 @@ function Header(props) {
                     <NavLink to='/contact'className="nav header__menu--link">Contact   </NavLink>
                   </li>
                   <li className="nav header__menu--items mega__menu--items">
-                    <NavLink className='nav' to='/shop'>
-                      Shop 
+                    <NavLink className='nav header__menu--link' to='/shop'>
+                      Shop
                     </NavLink>
                   </li>
                 </ul>
@@ -320,6 +320,7 @@ function Header(props) {
               <span className="offcanvas__stikcy--toolbar__label">Shop</span>
             </NavLink>
           </li>
+          
           <li className="offcanvas__stikcy--toolbar__list">
             <NavLink className="offcanvas__stikcy--toolbar__btn" to={"about"}>
               <span className="offcanvas__stikcy--toolbar__icon">

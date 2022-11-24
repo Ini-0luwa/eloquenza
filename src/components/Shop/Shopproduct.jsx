@@ -11,12 +11,19 @@ function Shopproduct({search}) {
   }, [])
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(false);
+  const [err, setErr] = useState("");
   const getFunc = () => {
+    setErr('');
+    setLoading(true);
   get(`${API_ROUTES.GET_STORE2}${page}`)
   .then((responce) => {
-    console.clear()
+    // console.clear()
     // console.log(responce, "resss");
+    setLoading(false);
     setData(responce.categories);
+  })
+  .catch((errr) => {
   })
 }; 
 const increPage = () => {
@@ -38,29 +45,37 @@ const decrePage = () => {
             {search.length > 0 && <h4>Search for "{search}"</h4>} <br/>
       <div id="product_grid" className="tab_pane active show">
         <div className="product__section--inner product__grid--inner">
-          <div className="row row-cols-xl-4 row-cols-lg-3 row-cols-md-3 row-cols-2 mb--n30">
-            {salesProduct.filter((prod) => {
+          { loading ? 
+          <div className='d-flex justify-content-center flex-coloumn'>
+          <div class="spinner-border text-primary" style={{height: "40px", width: '40px'}} role="status">
+          {/* <span class="sr-only">Loading...</span> */}
+           </div>
+           <small className='mx-4'>Please wait...</small>
+           </div>
+          : <div className="row row-cols-xl-4 row-cols-lg-3 row-cols-md-3 row-cols-2 mb--n30">
+            {data.filter((prod) => {
            if(search === ""){
              return prod;
-           }else if(prod.desc.toLowerCase().includes(search.toLowerCase()) ){
+           }else if(prod.name.toLowerCase().includes(search.toLowerCase()) ){
              return prod;
            }
          }).map((sales, index)=>{
               return(
                 <div className="col mb-30" key={index}>
+                  {err}
                   <div className="product__items ">
                     <div className="product__items--thumbnail">
                       <Link className="product__items--link" to="/productdetail">
-                      <img className="product__items--img product__primary--img" src={sales.img} alt="product-img" />
-                      <img className="product__items--img product__secondary--img" src={sales.hoverImg} alt="product-img" />
+                      <img className="product__items--img product__primary--img" src='food2.jpeg' alt="product-img" />
+                      <img className="product__items--img product__secondary--img" src='food1.jpeg' alt="product-img" />
                       </Link>
                       <div className="product__badge">
-                        <span className="product__badge--items sale">{sales.badge}</span>
+                        <span className="product__badge--items sale">{sales.name}</span>
                       </div>
                     </div>
                     <div className="product__items--content">
-                      <span className="product__items--content__subtitle">{sales.title}</span>
-                      <h3 className="product__items--content__title h4"><Link to="/productdetail">{sales.desc}</Link></h3>
+                      <span className="product__items--content__subtitle">{sales.slug}</span>
+                      <h3 className="product__items--content__title h4"><Link to="/productdetail">{sales.name}</Link></h3>
                       <div className="product__items--price">
                         <span className="current__price">{sales.newPrice}</span>
                         <span className="price__divided"></span>
@@ -141,7 +156,7 @@ const decrePage = () => {
                 </div>
               )
             })}
-          </div>
+          </div>}
         </div>
       </div>
     </div>

@@ -41,11 +41,11 @@ const Register = () => {
   //     setIsLoading(false)
   //   }
   // }
-
+  const token = "value";
   const handleSubmit = () => {
         // e.prevent.Default();
-        console.clear();
-        console.log("hi from register");
+        // console.clear();
+        // console.log("hi from register");
         setIsLoading(true);
         postMutate(API_ROUTES.REGISTER, {first_name: fullName, last_name, email, phone_number: phoneNo, password }, {})
         .then((res) => {
@@ -57,6 +57,8 @@ const Register = () => {
           setLastName('');
           setPassword('');
           setPhoneNo('');
+          localStorage.setItem("tokenE", token);
+          console.log(localStorage.getItem('token'), "token");
         })
   };
 
