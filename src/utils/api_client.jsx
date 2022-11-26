@@ -6,7 +6,7 @@ let API ='https://naijarestaurants.herokuapp.com'
 let slug = 'eloquenza'
 // https://naijarestaurants.herokuapp.com/
 export const API_ROUTES = {
-  REGISTER : `${API}/account/create-account`,
+  REGISTER : `/account/create-account`,
   LOGIN : `${API}/account/login`,
   GET_USER : `${API}/account/user`, 
   GET_STORE: 'https://naijarestaurants.herokuapp.com/store/?page=',

@@ -4,13 +4,14 @@ import {useNavigate} from 'react-router-dom';
 import { API_ROUTES, API_NAVIGATE } from '../../utils/api_client';
 import {storeTokenInLocalStorage} from '../../Lib/Common';
 import { apiMutate, getApi, postMutate } from '../../utils/axios';
+import { toast } from 'react-toastify';
 
 
 
 function Login() {
 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('emia@mai.cm');
+  const [password, setPassword] = useState('eryhb');
   const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate()
@@ -41,13 +42,15 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+  //  toast.dark('hi', {hideProgressBar: true, type: "info" , uniqueId: 500})
     postMutate(API_ROUTES.LOGIN, {phone_number: email, password}, {})
     .then((Res) => {
-      localStorage.setItem("tokenE", token);
+      // localStorage.setItem("tokenE", token);
+      setTimeout(function() {
+        // body
+        console.log(Res);
+      }, 5000);
     })
-    // getApi(API_ROUTES.GET_STORE)
-    // console.clear()
-    // console.log("hello");
   }
 
 

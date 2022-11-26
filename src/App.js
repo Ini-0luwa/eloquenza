@@ -17,15 +17,20 @@ import Checkout4 from './components/Checkout/Checkout4';
 import Productdetails from './components/Details/Productdetails';
 import Faqpage from './pages/faqsection/Faqpage';
 import getData from './utils/Apis';
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+import  {AppSetup}  from './utils/Axios2';
 
 
 function App() {
   useEffect(() => {
-    getData()
+    getData();
+    // AppSetup();
   }, [])
+  const token = localStorage.getItem('tokenE');
   return (
     <div>
-
+       <ToastContainer/>
         <Routes>
           <Route element={<Layout />}>
             <Route path='/' element={<Home />} />
@@ -35,13 +40,13 @@ function App() {
             <Route path='/contact' element={<Contact />}/>
             <Route path='/login' element={<LoginRegister />}/>
             <Route path='/shop' element={<Shoppage />}/>
-            <Route path='/checkout4' element={<Checkout4 />}/>
+            <Route path='/checkout4' element={<Checkout4 token={token} />}/>
             <Route path='/productdetail' element={<Productdetails />}/>
             <Route path='*' element={<Home />}/> 
             <Route path='/faq' element={<Faqpage />}/> 
             <Route element={<Layout2 />}>
               <Route path='/checkout' element={<Checkout1 />}/>
-              <Route path='/checkout2' element={<Checkout2 />}/>
+              <Route path='/checkout2' element={<Checkout2 token={token} />}/>
               <Route path='/checkout3/' element={<Checkout3 />}/>
             </Route>
           </Route>

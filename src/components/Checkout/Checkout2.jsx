@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { logo, smallproduct2, smallproduct4, smallproduct7 } from '../../assets/img';
 import {Link, useNavigate} from 'react-router-dom';
+// import { verify } from '../../utils/Verify';
+import { toast } from 'react-toastify';
 
-function Checkout2(props) {
+function Checkout2({token}) {
   const navigate = useNavigate();
+  useEffect(() => {
+    verify()
+  }, [])
+  const verify = () => {
+    if (!token) {
+      navigate("login");
+      toast.dark("Please log in !!!")
+      console.log("ho");
+    }
+  };
 
   return (
 <div className="main checkout__mian">

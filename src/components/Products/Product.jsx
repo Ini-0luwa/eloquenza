@@ -13,47 +13,14 @@ function Product(){
   const [store, setStore] = useState([]);
   const [loading, setLoading] = useState(false);
   const page = 1;
-  // const categories = store
-  // const categories = category.id
-  // useEffect( ()=>{
-  //   let response = axios.get(STORE_ENDPOINT.STORE);
-  //   console.log(response)
-  //   response.then((res)=>{
-  //     // console.log(res.data)
-  //   })
-  //   // setStore(response.data)
-  //   // const fetchStore = async () =>{
-  //   //   let response = await axios.get(STORE_ENDPOINT.STORE);
-  //   //   setStore(response.data)
-  //   //   // console.log(response.data)
-  //   // }
-  //   // fetchStore();
-  // },[])
   useEffect(() => {
-    // fetcherss();
     setLoading(true);
     get(`${API_ROUTES.GET_STORE}${page}`).then(responce => {
       setStore(responce.results);
-      // console.clear()
-      // console.log(store, "result");
       setLoading(false);
     });
   }, [])
-  console.clear();
-//   const fetcherss = async () => {
-//     await axios.get(`${API_ROUTES.GET_STORE}${page}`)
-//     .then((res) => {
-//   //     setTimeout(function() {
-//      setStore(res.results);
-//   //    // body
-//   //    console.clear()
-//   console.log(res.results);
-//      console.log(store, "store");  
-//   //  }, 2000); 
-//   })
-//  }
 const store2 = store.map((a) => a.categories);
-// console.log(store2[0]);
 const mainSStore = store2[0];
   return (
     <section className="product__section section--padding pt-5 mt-5">

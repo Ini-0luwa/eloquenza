@@ -1,22 +1,30 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+// import { Toast } from 'react-toastify/dist/components';
 import { API_ROUTES } from '../../utils/api_client';
 import { get, getApi, userDetails } from '../../utils/axios';
 
-function Checkout4(props) {
+function Checkout4({token}) {
   const [data, setdata] = useState([]);
   const phone = '08987345672';
+  const navigate = useNavigate();
   useEffect(() => {
     fetchusersD();
+    verify()
     // setdata(userDetails);
   }, [])
+  console.log(token, "tokl");
   // console.log(userDetails, "dataa");
-
+  const verify = () => {
+    if (!token) {
+      navigate('/login');
+      toast.error('You are not looged in !!!')
+    }
+  }
   const fetchusersD = () => {
    get(`${API_ROUTES.GET_USER}?phone_number=${phone}`)
     .then((responce) => setdata(responce))
-    // .then((responce) => {
-    //   console.log(responce, "Res");
-    // })
   };
   return (
 <section className="my__account--section section--padding">
