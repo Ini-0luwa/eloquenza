@@ -1,19 +1,30 @@
 import React, { useEffect } from 'react';
 import Shipping from '../Shipping/Shipping';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
+import { toast } from 'react-toastify';
 // import { getApi } from '../../utils/axios';
 // import { API_ROUTES } from '../../utils/api_client';
 
 function Contact(props) {
-  // useEffect(() => {
-  //   getApi(API_ROUTES.LOCATION, {})
-  //   .then((res) => {
-  //     setTimeout(function() {
-  //       console.log(res, "resssers");
-  //       // body
-  //     }, 5000);
-  //   })
-  // }, [])
+  useEffect(() => {
+    // getApi(API_ROUTES.LOCATION, {})
+    // .then((res) => {
+    //   setTimeout(function() {
+    //     console.log(res, "resssers");
+    //     // body
+    //   }, 5000);
+    // })
+    logged();
+  }, [])
+  const navigate = useNavigate();
+  const logged = () => {
+    let check = localStorage.getItem('isLogged');
+    let check1 = localStorage.getItem('tokenE');
+    if(!check || !check1){
+      navigate("/login");
+      toast.dark("Please Log in !!", {type: "error"})
+    }
+  }
   return (
 <section class="contact__section section--padding">
   <div class="container">

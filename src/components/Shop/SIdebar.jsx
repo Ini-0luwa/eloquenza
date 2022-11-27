@@ -1,8 +1,8 @@
 import React from 'react';
 import { smallproduct1, smallproduct2, smallproduct3, smallproduct4, smallproduct5 } from '../../assets/img';
 
-const SIdebar = ({search, setSearch}) => {
-  console.log(setSearch,"se");
+const SIdebar = () => {
+  // console.log(setSearch,"se");
   return (
 <div className="col-xl-3 col-lg-4">
   <div className="shop__sidebar--widget widget__area d-none d-lg-block">

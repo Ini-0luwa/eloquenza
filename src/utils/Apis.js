@@ -9,11 +9,11 @@ const getData = axios.create({
     },
 })
 getData.interceptors.request.use(function(config) {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('tokenE');
     config.headers.Authorization =  token ? `Bearer ${token}` : '';
     setTimeout(function() {
-        console.clear()
-        console.log('i am here');
+        // console.clear()
+        // console.log('i am here');
     }, 1000);
     return config;
 },
@@ -24,7 +24,7 @@ function(error){
 getData.interceptors.response.use(function(response) {
     setTimeout(function() {
         // console.clear()
-        console.log(response);
+        // console.log(response, "be like");
     if (response.status === 200 && response.config.method !== 'get') {
         if (response.data.token) return response;
 
@@ -47,7 +47,7 @@ getData.interceptors.response.use(function(response) {
         });
         return response;
       }
-    }, 4000);
+    }, 1000);
     return response;
 }, function(error){
     return Promise.reject(ErrorHandler(error));

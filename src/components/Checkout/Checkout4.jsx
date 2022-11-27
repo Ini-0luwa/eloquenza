@@ -5,19 +5,21 @@ import { toast } from 'react-toastify';
 import { API_ROUTES } from '../../utils/api_client';
 import { get, getApi, userDetails } from '../../utils/axios';
 
-function Checkout4({token}) {
+function Checkout4() {
   const [data, setdata] = useState([]);
-  const phone = '08987345672';
+  const phone = localStorage.getItem("phone_num")
   const navigate = useNavigate();
   useEffect(() => {
     fetchusersD();
     verify()
     // setdata(userDetails);
-  }, [])
-  console.log(token, "tokl");
+  }, []);
+  const token = localStorage.getItem("tokenE");
+  const islogged = localStorage.getItem("isLogged");
+  // console.log(token, "tokl");
   // console.log(userDetails, "dataa");
   const verify = () => {
-    if (!token) {
+    if (!token || !islogged) {
       navigate('/login');
       toast.error('You are not looged in !!!')
     }
